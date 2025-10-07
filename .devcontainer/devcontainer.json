@@ -9,7 +9,9 @@
         "extensions": [
           "ms-python.python",
           "ms-python.vscode-pylance",
-          "spencerwmiles.vscode-task-buttons"
+          "spencerwmiles.vscode-task-buttons",
+          "zaaack.markdown-editor"
+
         ]
       }
     },
