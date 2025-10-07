@@ -1,0 +1,83 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start server",
+            "type": "shell",
+            "command": "mkdocs serve",
+            "options": {
+                "shell": {
+                    "executable": "bash",
+                    "args": [
+                        "-c"
+                    ]
+                }
+            },
+            "presentation": {
+                "panel": "dedicated",
+                "focus": false,
+                "reveal": "silent",
+                "clear": true,
+                "showReuseMessage": false,
+                "close": true
+            }
+        },
+        {
+            "label": "Stop server",
+            "type": "shell",
+            "command": "pgrep -f mkdocs && pkill -f mkdocs || echo 'No mkdocs process found to stop'",
+            "options": {
+                "shell": {
+                    "executable": "bash",
+                    "args": [
+                        "-c"
+                    ]
+                }
+            },
+            "presentation": {
+                "panel": "dedicated",
+                "focus": false,
+                "reveal": "never",
+                "clear": true,
+                "showReuseMessage": false,
+                "close": true
+            }
+        },
+        {
+            "label": "Show docs",
+            "type": "shell",
+            "command": "echo",
+            "args": [
+                "Opening docs in Simple Browser...",
+                "${input:openSimpleBrowser}"
+            ],
+            "options": {
+                "shell": {
+                    "executable": "bash",
+                    "args": [
+                        "-c"
+                    ]
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "panel": "dedicated",
+                "focus": false,
+                "reveal": "never",
+                "clear": true,
+                "showReuseMessage": false,
+                "close": true
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "openSimpleBrowser",
+            "type": "command",
+            "command": "simpleBrowser.show",
+            "args": [
+                "http://localhost:8000"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "VsCodeTaskButtons.showCounter": false,
+    "VsCodeTaskButtons.tasks": [
+        {
+            "label": "$(play) Start server",
+            "task": "Start server",
+            "alignment": "left",
+            "tooltip": "Start MkDocs server in the background"
+        },
+        {
+            "label": "$(stop) Stop server",
+            "task": "Stop server",
+            "alignment": "left",
+            "tooltip": "Stop MkDocs server in the background"
+        },
+        {
+            "label": "$(globe) Show docs",
+            "task": "Show docs",
+            "alignment": "left",
+            "tooltip": "Show MkDocs documentation web page"
+        }
+    ],
+}
