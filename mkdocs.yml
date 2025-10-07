@@ -1,7 +1,9 @@
-site_name: "MkDocs Material Devcontainer"
-repo_url: https://github.com/niclasheinz/mkdocs-material-devcontainer
-site_author: Niclas Heinz
-repo_name: niclasheinz/mkdocs-material-devcontainer 
+site_name: "Documentación"
+repo_url: https://github.com/Tknika/5g-docs
+site_author: Tknika
+repo_name: Tknika/5g-docs
 site_url: https://mydomain.org/mysite
 theme:
   name: material
+  palette:
+    scheme: slate
