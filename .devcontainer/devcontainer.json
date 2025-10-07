@@ -1,5 +1,5 @@
 {
-    "name": "Python Dev Container",
+    "name": "5G Docs",
     "image": "mcr.microsoft.com/devcontainers/python:3.10-bookworm",
     "customizations": {
       "vscode": {
@@ -10,8 +10,9 @@
           "ms-python.python",
           "ms-python.vscode-pylance",
           "spencerwmiles.vscode-task-buttons",
-          "zaaack.markdown-editor"
-
+          "zaaack.markdown-editor",
+          "yzhang.markdown-all-in-one",
+          "davidanson.vscode-markdownlint"
         ]
       }
     },
