@@ -2,10 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mydomain.org/mysite/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Configuraci%C3%B3n%20SIMs%20OPEN-CELL/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <loc>https://mydomain.org/mysite/DESPLIEGUES/INSTALAR%20open5gs%20CURSO2025_2026/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/DESPLIEGUES/Pasos%20a%20realizar_Comandos_NETWORK%20SLICING/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20ANALIZADOR%20DE%20ESPECTRO/Instalaci%C3%B3n%20y%20configuraci%C3%B3n%20de%20la%20SDR%20Pluto%20y%20Soft%20Satsagen/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20CONFIGURAR%20SIMs/CONFIGURAR%20LAS%20SIMs%20DE%20OPEN-CELL/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20CONFIGURAR%20SIMs/CONFIGURAR%20LAS%20SIMs%20DE%20SYSMOCOM/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/Data%20Sheet%20Stellar227%20gNB%20/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/MANUAL%20BAICELLS%205G.docx/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/Manual%20OFICIAL%20gNB%20Baicells%20-%20Stellar227%20Indoor%20Installation%20Guide/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/VANKOM-gNB/MANUAL%20VANKOM%205G/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/VANKOM-gNB/Manual%20OFICIAL%20Vankom%20gNB-vkScell-g3%20v1.0/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/RETOS/RETO1_%20Configuraci%C3%B3n%20de%20red%205G_EiTB.docx/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/RETOS/RETO2_%20Streaming_EiTB_UPF%20separado.docx/</loc>
+         <lastmod>2026-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/RETOS/RETO3_%20Network%20Slicing_EiTB.docx/</loc>
+         <lastmod>2026-06-23</lastmod>
     </url>
 </urlset>

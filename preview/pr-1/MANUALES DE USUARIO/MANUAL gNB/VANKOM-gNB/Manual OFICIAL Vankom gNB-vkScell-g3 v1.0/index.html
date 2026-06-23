@@ -1,0 +1,1760 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Tknika">
+      
+      
+        <link rel="canonical" href="https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/VANKOM-gNB/Manual%20OFICIAL%20Vankom%20gNB-vkScell-g3%20v1.0/">
+      
+      
+        <link rel="prev" href="../MANUAL%20VANKOM%205G/">
+      
+      
+        <link rel="next" href="../../../../RETOS/RETO1_%20Configuraci%C3%B3n%20de%20red%205G_EiTB.docx/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Manual OFICIAL Vankom gNB vkScell g3 v1.0 - Documentación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Documentación" class="md-header__button md-logo" aria-label="Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Manual OFICIAL Vankom gNB vkScell g3 v1.0
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Tknika/5g-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Tknika/5g-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Documentación" class="md-nav__button md-logo" aria-label="Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentación
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Tknika/5g-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Tknika/5g-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ONGI ETORRI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DESPLIEGUES
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            DESPLIEGUES
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../DESPLIEGUES/INSTALAR%20open5gs%20CURSO2025_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    INSTALAR open5gs CURSO2025 2026
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../DESPLIEGUES/Pasos%20a%20realizar_Comandos_NETWORK%20SLICING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NETWORK SLICING
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MANUALES DE USUARIO
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            MANUALES DE USUARIO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MANUAL ANALIZADOR DE ESPECTRO
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            MANUAL ANALIZADOR DE ESPECTRO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MANUAL%20ANALIZADOR%20DE%20ESPECTRO/Instalaci%C3%B3n%20y%20configuraci%C3%B3n%20de%20la%20SDR%20Pluto%20y%20Soft%20Satsagen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Instalación y configuración de la SDR Pluto y Soft Satsagen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MANUAL CONFIGURAR SIMs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            MANUAL CONFIGURAR SIMs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MANUAL%20CONFIGURAR%20SIMs/CONFIGURAR%20LAS%20SIMs%20DE%20OPEN-CELL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CONFIGURAR LAS SIMs DE OPEN CELL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MANUAL%20CONFIGURAR%20SIMs/CONFIGURAR%20LAS%20SIMs%20DE%20SYSMOCOM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CONFIGURAR LAS SIMs DE SYSMOCOM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MANUAL gNB
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            MANUAL gNB
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    BAICELLS gNB
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            BAICELLS gNB
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BAICELLS-gNB/Data%20Sheet%20Stellar227%20gNB%20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Sheet Stellar227 gNB 
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BAICELLS-gNB/MANUAL%20BAICELLS%205G.docx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MANUAL BAICELLS 5G.docx
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BAICELLS-gNB/Manual%20OFICIAL%20gNB%20Baicells%20-%20Stellar227%20Indoor%20Installation%20Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Manual OFICIAL gNB Baicells   Stellar227 Indoor Installation Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    VANKOM gNB
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            VANKOM gNB
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MANUAL%20VANKOM%205G/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MANUAL VANKOM 5G
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Manual OFICIAL Vankom gNB vkScell g3 v1.0
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    RETOS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            RETOS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../RETOS/RETO1_%20Configuraci%C3%B3n%20de%20red%205G_EiTB.docx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RETO1  Configuración de red 5G EiTB.docx
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../RETOS/RETO2_%20Streaming_EiTB_UPF%20separado.docx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RETO2  Streaming EiTB UPF separado.docx
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../RETOS/RETO3_%20Network%20Slicing_EiTB.docx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RETO3  Network Slicing EiTB.docx
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Manual OFICIAL Vankom gNB vkScell g3 v1.0</h1>
+
+<p><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAEYUlEQVR4XtWZW6gVVRjHv9NNsqASUbIepAu+SHmBKAgK7cEHixI3VErm3qdZa7SQgigiUMonX6KXoA7BwQep3dXjdmat2RuMBCOylxDPQwhW9nAipUw9Hc/F/uubc6lvzz5nZjt7n+YPPzbM7Fnff61Z37oNUbvavfsapteuIhW9SMq+F2O+Ji8cIhWMMV5wCdcHSZtPGD96i1TjKdr2xa1M11SpLiLPejBwjNHmIulwokeHV9Lg/otnxkjbnxnf9lE5WE2l6rUyVL4qlPG171/PKLMFwQZJhePSULtMVuQ8GuFDdJ3lTC7a+tkS9OEqo01uhpOA+V8YZTcjco+0kl5+cB9a+CRaeMIhA3UKNNAI+fU90286swpnfLu5n/HtKVlot4D5y+ie+5hUiVs5uJR0NBjTvVZOIh59gG9eIroyS58vVW+A4c/jTM9qOpjEIMnsBBhltB3v8W3C/9MD839hIntY2p1RYY2r8Pl2DMPgHxjGPo1pVMgbeIjKX66IObQSgTfi3tuMjk64199czuygAb5Dw97CTOuZgcWMtj/KB1qBCo4yfv1jPLeSEyhNEnkIrOtlVPYnRpvhlFwiL9LMTGHo/I6UMyJm0L9R0OuMl2W4+peeO3QH4w2sSc322l1MLLSSsscd0mASaGVkevQGxTPbLJnecRXVeG/wIMwMO6TJJDCmHuTRZ97l21fSDn9o6QvYOKyVRcyPlOmTBluB7lSnR45cJ4vIRc/WbqMd9Zf/g2qBbuwssHEdfisNtgLj9asyXm4qVW9GI/7ukHEl2MtOYAwPz8kbzRiGKrVNMl5+wsbbrx93NMdvxk3zc0+/vmHohdpjMlx+wupP2yOOpvgJFNi4F/4pL7aCvMNPynD5CV3FLaSAjJsEktN8Ly+2gsf8Tmnr/ptg+jeHjCuJk1OZfnmjFViWBqlWgO1oS3AnEvMAo6OPYmwyKuovsHE/ei31lK+wE6lg5/+/kAofhaERhzSaBLdEp2bPTOJ9pj3hkCaTwJu5HO+651uFNe7khW8yGGak0SSIT2jrPtNuspaqi5ht4fLUPH1gKTOtcrSM0faMNNkKcsdkjh22j7zgbp5AmDlUOnYjqcZmrP5OMr49l47oLNjFNMmLNxXS5Fyg6wyR3+hnvGgTVcw92NwujglvR+I/ML259u03+B2dOYdpLi8Jcsfb7uTY0aSNAwtR6FfyoSzEQ6txh0HDjLYj+B1LO+QmEZ8qRE9IuzMqrHEnFd2LQGccsoBuA8PjjK7vxepx7vzBhngd40dDsrBuQXxKa/czG4IF0uLs6j28Dq/616t5ze3gTtSwZvkAyb2QyazCGncqhyvQx47GdNY88amvo7Ern/XQVM3d0Zs2/AZk0KuB3GcTHVk0zmqmI0d77rRU2T1I3NOMW7tkrEjcFex5RtsaJr7HacO7GRMwqwprfEpTXwe8aD0q8g5MHGW0PQ1jF7BgG58EFTNuL/kD475auE/qblngSLO+SdA/YhGhwdEPQoEAAAAASUVORK5CYII=" /></p>
+<p>vkScell-g3 5G Pico gNodeB Manual </p>
+<p>All rights reserved </p>
+<p>Vankom Technology Co., Ltd. </p>
+<p>This material and all contents contained therein are the property of Vankom  Technology Co., Ltd. (Vankom) and are protected by the laws of the People's Republic  of China and applicable international conventions on copyright. Without the written  authorization of Vankom Technology Co., Ltd., no one shall copy, disseminate,  distribute, modify or otherwise use part or all of the contents of this material in  any form, and violators will be held liable according to law. </p>
+<p>Template Number: Version: V1.0.0 implemented on September 3, 2020</p>
+<p>I <br />
+<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAEYUlEQVR4XtWZW6gVVRjHv9NNsqASUbIepAu+SHmBKAgK7cEHixI3VErm3qdZa7SQgigiUMonX6KXoA7BwQep3dXjdmat2RuMBCOylxDPQwhW9nAipUw9Hc/F/uubc6lvzz5nZjt7n+YPPzbM7Fnff61Z37oNUbvavfsapteuIhW9SMq+F2O+Ji8cIhWMMV5wCdcHSZtPGD96i1TjKdr2xa1M11SpLiLPejBwjNHmIulwokeHV9Lg/otnxkjbnxnf9lE5WE2l6rUyVL4qlPG171/PKLMFwQZJhePSULtMVuQ8GuFDdJ3lTC7a+tkS9OEqo01uhpOA+V8YZTcjco+0kl5+cB9a+CRaeMIhA3UKNNAI+fU90286swpnfLu5n/HtKVlot4D5y+ie+5hUiVs5uJR0NBjTvVZOIh59gG9eIroyS58vVW+A4c/jTM9qOpjEIMnsBBhltB3v8W3C/9MD839hIntY2p1RYY2r8Pl2DMPgHxjGPo1pVMgbeIjKX66IObQSgTfi3tuMjk64199czuygAb5Dw97CTOuZgcWMtj/KB1qBCo4yfv1jPLeSEyhNEnkIrOtlVPYnRpvhlFwiL9LMTGHo/I6UMyJm0L9R0OuMl2W4+peeO3QH4w2sSc322l1MLLSSsscd0mASaGVkevQGxTPbLJnecRXVeG/wIMwMO6TJJDCmHuTRZ97l21fSDn9o6QvYOKyVRcyPlOmTBluB7lSnR45cJ4vIRc/WbqMd9Zf/g2qBbuwssHEdfisNtgLj9asyXm4qVW9GI/7ukHEl2MtOYAwPz8kbzRiGKrVNMl5+wsbbrx93NMdvxk3zc0+/vmHohdpjMlx+wupP2yOOpvgJFNi4F/4pL7aCvMNPynD5CV3FLaSAjJsEktN8Ly+2gsf8Tmnr/ptg+jeHjCuJk1OZfnmjFViWBqlWgO1oS3AnEvMAo6OPYmwyKuovsHE/ei31lK+wE6lg5/+/kAofhaERhzSaBLdEp2bPTOJ9pj3hkCaTwJu5HO+651uFNe7khW8yGGak0SSIT2jrPtNuspaqi5ht4fLUPH1gKTOtcrSM0faMNNkKcsdkjh22j7zgbp5AmDlUOnYjqcZmrP5OMr49l47oLNjFNMmLNxXS5Fyg6wyR3+hnvGgTVcw92NwujglvR+I/ML259u03+B2dOYdpLi8Jcsfb7uTY0aSNAwtR6FfyoSzEQ6txh0HDjLYj+B1LO+QmEZ8qRE9IuzMqrHEnFd2LQGccsoBuA8PjjK7vxepx7vzBhngd40dDsrBuQXxKa/czG4IF0uLs6j28Dq/616t5ze3gTtSwZvkAyb2QyazCGncqhyvQx47GdNY88amvo7Ern/XQVM3d0Zs2/AZk0KuB3GcTHVk0zmqmI0d77rRU2T1I3NOMW7tkrEjcFex5RtsaJr7HacO7GRMwqwprfEpTXwe8aD0q8g5MHGW0PQ1jF7BgG58EFTNuL/kD475auE/qblngSLO+SdA/YhGhwdEPQoEAAAAASUVORK5CYII=" /></p>
+<p>Table of Contents </p>
+<p>1 Introduction ............................................................................................................................................ 1 </p>
+<p><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAYAAABSfLWiAAAAjklEQVR4XmNggAABKE4EYm6oGC7ABcQxQCwCxWCgB8RrofgFECvAJNCAEhQvA+IHQGwExWBAFUM0GSAaQfg4lMYG5JDwVgY0Q0CABYrxGYIMhrshokBsBcWXgTgAiGWgWBiIOxggFsDSkhkQHwXiWCgGxRhYsBmK24G4BYgdoBikqRSImYFYA4qR1YGwDwBdHx/x4WeL/wAAAABJRU5ErkJggg==" />Introduction ..................................................................................................................................1 <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAAvUlEQVR4Xq3SrQoCQRQF4Iv/ICIIBpvBrIKgYFrYoNFq0bJ2fx/Ax7CZNQkKvoEIFrvP4DN4rnPWHRZWWPTAV+6dOWVGxCRLfchxFk6aHBhCld4pw4ae9iIUj/awhRvpfemBS1eJLilSkg7U1eVfSjQpukh0iZ0EnKjpD+OWtOFMGX8Yp6QER2jRJ99KdK7J0w5GwTrIzyU1GNMDZtCgiph/oZ9sTXeYw5QckDosaAVL6FABJmJeY0B6xua+ABhgJfe0COSgAAAAAElFTkSuQmCC" />Explanation of terms.....................................................................................................................1 <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAAyUlEQVR4Xq3Rvw7BUBQG8KOIP4lRYjB0MTJJsBkkPICFibUxYLIaTAYrsXkKsQsGo9UjeAbf6f2uNE0qTfiSX5rck35p7xExyVAPsjwLJ01tGIJLfoqwpVdwEEqfdrCGO5V12IUO3SS6JE8JcOBELR3+pUSTootElwRTgyv5v6OJU1KgIzxgT59FxCmx0Q3pMg7k2cG3En1JkySbGW3swc8lVZjTE1bQoJKYO8jxXC1gAmdqglRgRGM+9faVrnQg5gtcmsIS6uS8Ad0CJ6jNR9DJAAAAAElFTkSuQmCC" />Readers..........................................................................................................................................1 2 Product Introduction............................................................................................................................... 1 </p>
+<p><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAAwklEQVR4XrXRMQtBYRQG4IMi5C/YrAxSYrlkMBoVG1IMFCalbEa7weYXWPwKgz9gNPkN3tN9T32+XBNvPct3zn2/270iIjEoQZ9qkJDoZKBNaTuswAX2dIWBDb0U4ARPyttAm5WlI2Fp3DmzdKEBN/ptiZ8eHP1DJzn5UpKlMwTvo7dEluir72gj4R+LyscSfWAEB3K/j5Yby/9KWvCALc1hDEmY0Jq7ZRjCnWZQ1UERVp4ppCS8QDV1EanDwtlbQvACcC4rqvg3hb0AAAAASUVORK5CYII=" />Introduction to the device.............................................................................................................1 2.1.1 API description ................................................................................................................1 2.1.2 Introduction to the indicator...........................................................................................2 </p>
+<p><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAA3UlEQVR4Xq3SPwuBURQG8ONPFCVlsFisBkpZlHqVwaIMsrAYZLBYTErZjLIalMHOplAGs6/hY3hO5xzdbq/NU7/lnnvPve+9LxFRBCowVHWIUXiy0IG+yluhBhfYqBeMregkClvYw1HdIcfFlLJ0SZryIj8ZkpNzjT2hyoW/NPEzgIM/6MWaPKDkFtLqBIFbCElP8b0kbJC7rtWS5Mi/wjvfVNEGeQG/xk6592PHtvspwBma6pu/NGnBG1ZqBhOSb+XmbAFxkle76hzTACrD3DOFJMkGrE3yF49C5gYfuZwn0U5HXn4AAAAASUVORK5CYII=" />Key skill indicators.........................................................................................................................3 3 Instructions for base station operation................................................................................................... 4 </p>
+<p><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAAyUlEQVR4XrXQuw4BQRgF4N8tIq6NVqVSUWxLaBQqobGFywPQKiUuD6BSKRR6HkOikHgGpXdwxpxJ/mx2O07yJTPz757sjohNDXzqQIrnYclAl8z6mwZcYEV3mLthIFU4w5sqbpAW1YiM4ar2OgNow5N+W+JSogMsAzOdvESUbOBGD/D0MJDIkiRkqS+2TP+iTmhJHGJug5TFfk0REorL/0p6sIcJneAotnxBWz7bFHvpL1rzTAowhB2NIGffkTq1uDcXPoUZmbX3AZETKvyrw7odAAAAAElFTkSuQmCC" />Base station provisioning process.................................................................................................4 3.1.1 Parametric planning ........................................................................................................4 3.1.2 Hardware connection checks..........................................................................................4 3.1.3 The device is powered on................................................................................................5 3.1.4 Base station parameter configuration.............................................................................5 3.1.5 Device restart..................................................................................................................9 3.1.6 Cell status inquiry..........................................................................................................10 <br />
+<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAA4klEQVR4Xq3SvQtBURgG8OM7H6GkbMwMMmCjlEkGJcUik81uYmBisVkkBrMMZGQjg/xFntd539vpxuap33DPc3rvOd2rlE4aOqwCHl63Jwp1aLGEFDnYw4g9YCClEQfMYQ1bdoUYlT7wW1v1aQ7Gs5mw0sOcjIYUqPjLEAndlyxhaBZfIkMukJHFMdzYC4pS/EiD7cAri24IMirvEJDSFnrziSVlkY5F95TE4QkRcBkoKThCiVn5y5AaLKDLNrBSenifzZT+Ac9KX3XKJlCFz2drGkUbQlQgWVZW+jS0r2eTfwPYsCckb09VYgAAAABJRU5ErkJggg==" />Commonly used function configurations....................................................................................10 3.2.1 Maximum transmit power modified .............................................................................10 3.2.2 Software version upgrades............................................................................................11 3.2.3 Neighbors are added.....................................................................................................11 4 Instructions for using the LMT interface ............................................................................................... 18 </p>
+<p><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAKCAYAAAC5Sw6hAAAAs0lEQVR4XrXRsQpBURzH8T8ihUwmpYyUsplkJaOSYrJJFoMXoLwCSRmVeAysPIHBg/ie7v/Wce7Z5Fuf4d5Tv7rninyXwAAt571bHmNkVKQ2Hti4B1Z1HPFGUUX6eSirTphjax86VVHCTTxDMzVFDzv70FNaPENlnFUOfewRV768Q0Nc1QV3vDBSvv47lJTgk0Jm+ICUMn9pgZgqoIknuspcT6SaBPcUVsHEem5giTVWqvMBgkYliLKmDwkAAAAASUVORK5CYII=" />LMT landing page........................................................................................................................18 <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAALCAYAAAByF90EAAAA1UlEQVR4Xq3SPwuBURQG8Otf2ZQFo5JMmJQkGSSTpIhPgTL4FjZJGAwGZVAsSlnkM5h8FM95PVfXpTeDp37De+7b6d5zr1Lv8UAJ0lbdTBCq0IUofSQLd5hZdTMjWMMcrhTRi35awFi5NwqBlw6U14t/a5SjKbSUeyMdaXSijBRkJ0uSITfVb41k4BuSC1AV2JMMewBbiNG3xOECKXJSgxXJTRzhpp5HFPIkZNc6YdhBw6g5+VsjO/aMCjCBAMksz9CHHhVffxtJQt34TkAHfNSGoaX8AASvLKGkuEg8AAAAAElFTkSuQmCC" />system .........................................................................................................................................18 4.2.1 The menu bar collapses/expands with the current page position................................18 4.2.2 Customize the device name ..........................................................................................19 4.2.3 The operating status of the device................................................................................19 4.2.4 SSH..................................................................................................................................20 4.2.5 Restart your device........................................................................................................20 4.2.6 Download the how-to ...................................................................................................21 4.2.7 Change your password..................................................................................................21 4.2.8 Restart LMT ...................................................................................................................22 4.2.9 Sign out .........................................................................................................................22 <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAALCAYAAAByF90EAAAA5ElEQVR4Xq3SPwtBURgG8NefJDtlUMqgTDIoDEoZDCal2E1SNsonMBgkg4UYZDMpgwwWvoCyWXwQz+O+N9ehO3nqV/ec0316u/eIfMYDRUgb+84EoQxNSKqvsOABG7FKyUwHpjCBq4rah341h7G4F4XkfXZSBfvwb0U5NYO6uBfZycBFxbjBSZYqBTVxL+JLe7iJ9Z2IU77+wE7loQ8HiKtfCUAEtqrFzQqs1QqOcIeG4lSc2o7P8TxQQy7+VmTG/Eb8IwuxLiKNoAttOKvs600jCSg51mGoyruYN7kn1iS8wOR9Ai/8L7X/xK5lAAAAAElFTkSuQmCC" />Overview .....................................................................................................................................23 4.3.1 Device resource usage...................................................................................................23 4.3.2 The operating status of the device................................................................................24 4.3.3 Board temperature........................................................................................................24 4.3.4 GPS information .............................................................................................................24 4.3.5 Alarm information.........................................................................................................25 4.3.6 Base station information...............................................................................................25 4.3.7 The running status of the PLF/RAN/OAM service ..........................................................26 4.3.8 Base station capabilities................................................................................................26</p>
+<p>I <br />
+<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAEYUlEQVR4XtWZW6gVVRjHv9NNsqASUbIepAu+SHmBKAgK7cEHixI3VErm3qdZa7SQgigiUMonX6KXoA7BwQep3dXjdmat2RuMBCOylxDPQwhW9nAipUw9Hc/F/uubc6lvzz5nZjt7n+YPPzbM7Fnff61Z37oNUbvavfsapteuIhW9SMq+F2O+Ji8cIhWMMV5wCdcHSZtPGD96i1TjKdr2xa1M11SpLiLPejBwjNHmIulwokeHV9Lg/otnxkjbnxnf9lE5WE2l6rUyVL4qlPG171/PKLMFwQZJhePSULtMVuQ8GuFDdJ3lTC7a+tkS9OEqo01uhpOA+V8YZTcjco+0kl5+cB9a+CRaeMIhA3UKNNAI+fU90286swpnfLu5n/HtKVlot4D5y+ie+5hUiVs5uJR0NBjTvVZOIh59gG9eIroyS58vVW+A4c/jTM9qOpjEIMnsBBhltB3v8W3C/9MD839hIntY2p1RYY2r8Pl2DMPgHxjGPo1pVMgbeIjKX66IObQSgTfi3tuMjk64199czuygAb5Dw97CTOuZgcWMtj/KB1qBCo4yfv1jPLeSEyhNEnkIrOtlVPYnRpvhlFwiL9LMTGHo/I6UMyJm0L9R0OuMl2W4+peeO3QH4w2sSc322l1MLLSSsscd0mASaGVkevQGxTPbLJnecRXVeG/wIMwMO6TJJDCmHuTRZ97l21fSDn9o6QvYOKyVRcyPlOmTBluB7lSnR45cJ4vIRc/WbqMd9Zf/g2qBbuwssHEdfisNtgLj9asyXm4qVW9GI/7ukHEl2MtOYAwPz8kbzRiGKrVNMl5+wsbbrx93NMdvxk3zc0+/vmHohdpjMlx+wupP2yOOpvgJFNi4F/4pL7aCvMNPynD5CV3FLaSAjJsEktN8Ly+2gsf8Tmnr/ptg+jeHjCuJk1OZfnmjFViWBqlWgO1oS3AnEvMAo6OPYmwyKuovsHE/ei31lK+wE6lg5/+/kAofhaERhzSaBLdEp2bPTOJ9pj3hkCaTwJu5HO+651uFNe7khW8yGGak0SSIT2jrPtNuspaqi5ht4fLUPH1gKTOtcrSM0faMNNkKcsdkjh22j7zgbp5AmDlUOnYjqcZmrP5OMr49l47oLNjFNMmLNxXS5Fyg6wyR3+hnvGgTVcw92NwujglvR+I/ML259u03+B2dOYdpLi8Jcsfb7uTY0aSNAwtR6FfyoSzEQ6txh0HDjLYj+B1LO+QmEZ8qRE9IuzMqrHEnFd2LQGccsoBuA8PjjK7vxepx7vzBhngd40dDsrBuQXxKa/czG4IF0uLs6j28Dq/616t5ze3gTtSwZvkAyb2QyazCGncqhyvQx47GdNY88amvo7Ern/XQVM3d0Zs2/AZk0KuB3GcTHVk0zmqmI0d77rRU2T1I3NOMW7tkrEjcFex5RtsaJr7HacO7GRMwqwprfEpTXwe8aD0q8g5MHGW0PQ1jF7BgG58EFTNuL/kD475auE/qblngSLO+SdA/YhGhwdEPQoEAAAAASUVORK5CYII=" /></p>
+<p>4.3.9 Community information................................................................................................26 <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAKCAYAAAC5Sw6hAAAAx0lEQVR4Xq3SP8tBYRzG8R89HpMnZfEGrFYmfzIpRVmwIGVQkpLJLoMFg3fAJC9CBsuzKnkvvrf7d8R9ysJVn+Gcc3UN931EXhNCBynnvZsAGsgqX8q4YOp+cJIX21sqXz4eiqk9JvJ+KIwNBlioR8aqjp68H2pihIo4Qwls1R/6mCGovMTVDlFUsVL3XgsHZUr/OKOkvOTUSWzviKvqmkJLvjT0i8iTIeZi/ymjgDZ+lNerYa3MBfiSRvHpOSP2PNwkxR64ITeRfi+udwiJmwAAAABJRU5ErkJggg==" />Real-time information.................................................................................................................27 4.4.1 Operational status.........................................................................................................27 <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAKCAYAAAC5Sw6hAAAAzUlEQVR4Xq3SqwoCQRQG4MN6AcXLAwgWwWAw2A1iEYyCiHgpikEQg0EQLFaL2UsTg82sBl/AB/Bl/A/7L8wOspb94QszZ+YMs7Mi/kSgB3Vr3kwZxjSkrG8F0oA37O2CkSUcYAAdyvhWSAiNUnSBufxvNLInvSxoCi0JbqQH3eEMM0pooQBXSkMbjuCQHb1GDopwo4kWdOOD9JQXfKBPQVnTTgehNYpC0tCFE8RI/5sVxElfqyruCz+pJj9SgqYxzovb3PtmumkLG6iQ8wWd7ioyal3GuQAAAABJRU5ErkJggg==" />Rapid provisioning.......................................................................................................................28 4.5.1 Quick start.....................................................................................................................28 4.5.2 Quick search..................................................................................................................31 4.5.3 Common configurations................................................................................................32 Configuration management........................................................................................................32 4.6.1 Basic configuration........................................................................................................32 4.6.2 Security configuration ...................................................................................................34 4.6.3 QOS.................................................................................................................................35 4.6.4 base station...................................................................................................................36 4.6.5 Parameter comparison..................................................................................................39 Software management................................................................................................................40 4.7.1 Base station upgrades...................................................................................................40 4.7.2 Version switching ..........................................................................................................42 Community management ...........................................................................................................42 4.8.1 Community information................................................................................................42 4.8.2 Community initiation process.......................................................................................43 4.8.3 Cell configuration ..........................................................................................................44 Neighborhood management.......................................................................................................44 4.9.1 Neighborhood information ...........................................................................................44 4.9.2 Neighborhood configuration.........................................................................................44 Alarm management ..................................................................................................................45 Performance management .......................................................................................................46 4.11.1 counter........................................................................................................................46 4.11.2 KPI.................................................................................................................................47 4.11.3 Real-time counting ......................................................................................................47 Log management.......................................................................................................................48 4.12.1 Base station logs..........................................................................................................48 4.12.2 System logs..................................................................................................................49 System administration...............................................................................................................49 4.13.1 Scheduled tasks...........................................................................................................49 4.13.2 Parameter Authorization (Administrator) ...................................................................50 4.13.3 Role Authorization (Administrator).............................................................................50 4.13.4 User Management (Administrator).............................................................................51 4.13.5 System configuration...................................................................................................51</p>
+<p>I </p>
+<p>1 preface </p>
+<p>Introduction </p>
+<p>This manual describes the equipment appearance, functional  characteristics, configuration, and maintenance operation methods of the  base station. The common problems that may be encountered are also explained  in the annotations, providing technical guidance for operators to correctly use, install,  open and maintain the equipment.  </p>
+<p>Explanation of terms </p>
+<p>table 1Explanation of terms </p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th style="text-align: right;">interpretation</th>
+<th>remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LMT</td>
+<td style="text-align: right;">Maintain the terminal locally</td>
+<td></td>
+</tr>
+<tr>
+<td>OAM</td>
+<td style="text-align: right;">Operation and maintenance management</td>
+<td></td>
+</tr>
+<tr>
+<td>WITH</td>
+<td style="text-align: right;">Centralized unit</td>
+<td></td>
+</tr>
+<tr>
+<td>Of the</td>
+<td style="text-align: right;">Distribution units</td>
+<td></td>
+</tr>
+<tr>
+<td>PHY</td>
+<td style="text-align: right;">Physical layer</td>
+<td></td>
+</tr>
+<tr>
+<td>PLF</td>
+<td style="text-align: right;">platform</td>
+<td></td>
+</tr>
+<tr>
+<td>5GC</td>
+<td style="text-align: right;">Core network</td>
+<td></td>
+</tr>
+<tr>
+<td>PLMN</td>
+<td style="text-align: right;">Public Land Mobile Network</td>
+<td></td>
+</tr>
+<tr>
+<td>TAC</td>
+<td style="text-align: right;">Track region codes</td>
+<td></td>
+</tr>
+<tr>
+<td>Slice_SST</td>
+<td style="text-align: right;">Slice type</td>
+<td></td>
+</tr>
+<tr>
+<td>Slice_SD</td>
+<td style="text-align: right;">切片差分器（Slice Differentiato）</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Readers </p>
+<p>This book is suitable for: </p>
+<p>⚫ Engineering and technical personnel </p>
+<p>⚫ Open the commissioning personnel </p>
+<p>⚫ Operation and maintenance personnel </p>
+<p>⚫ Version testers </p>
+<p>2 Product Introduction </p>
+<p>Introduction to the device </p>
+<p>2.1.1 API description </p>
+<p>Figure 1 shows the interface diagram of the 5G integrated base station</p>
+<p><strong>1</strong> / <strong>55</strong> </p>
+<p>fig 1Base station interface diagram <br />
+Table 2 describes the interfaces of 5G integrated base stations. </p>
+<p>table 2Base station interface description </p>
+<table>
+<thead>
+<tr>
+<th>seri  al   numb  er</th>
+<th>interface</th>
+<th>Description of the interface and its functions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ANT1/2/3/4</td>
+<td>The external antenna interface corresponds to 4 antennas respectively,  and the configuration of 2 antennas can only be connected to 1 and 4  ports.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>PWR-12VDC</td>
+<td>Power interface, 4 DC 12V power inputs</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GE</td>
+<td>Gigabit electrical port, which can be used as a return port or LMT  interface</td>
+</tr>
+<tr>
+<td>4</td>
+<td>SFP1</td>
+<td>10GE optical port, backhaul interface, connected to the core network</td>
+</tr>
+<tr>
+<td>5</td>
+<td>SFP2</td>
+<td>10GE optical port, reserved for expansion</td>
+</tr>
+<tr>
+<td>6</td>
+<td>USB</td>
+<td>Support USB2.0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>TST</td>
+<td>/</td>
+</tr>
+</tbody>
+</table>
+<p>//GE 端口默认 IP 172.20.50.1 </p>
+<p>2.1.2 Introduction to the indicator </p>
+<p>fig 2Schematic diagram of the indicator light <br />
+Table 3 describes the base station interfaces. </p>
+<p>table 3Description of the base station indicator</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Silk screen  name</th>
+<th>type</th>
+<th>color</th>
+<th>state</th>
+<th>illustrate</th>
+<th>use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">POWER</td>
+<td>power   supply</td>
+<td>green</td>
+<td>extinguish</td>
+<td>There is no power input</td>
+<td>Power status  indication</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td>The green</td>
+<td>There is a power input</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2</strong> / <strong>55</strong> </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Light</th>
+<th></th>
+<th>light is   always on</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RUN/ALM</td>
+<td>The status  of the   entire   machine  Light</td>
+<td>Green/Red Bicolor</td>
+<td>The green   light is   solid or   flashing</td>
+<td>Solid on: The cell is   running normally,   flashing: Slow flashing in  cell activation: Out in  cell configuration: The  cell is abnormal</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Flash red   fast or   slowly</td>
+<td>High-level alerts flash  fast  Low-level alarms flash  slowly</td>
+<td>Indication   of the   operating   status of   the system</td>
+</tr>
+<tr>
+<td>ACT/LINK1</td>
+<td>Fiber link  status   indicator</td>
+<td>green</td>
+<td>extinguish</td>
+<td>The internal link was not  successfully established</td>
+<td>SPF0 link   status   indication</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>The green   light is   always on</td>
+<td>The internal link is   established normally</td>
+<td></td>
+</tr>
+<tr>
+<td>ACT/LINK2</td>
+<td>Fiber link  status   indicator</td>
+<td>green</td>
+<td>extinguish</td>
+<td>The internal link was not  successfully established</td>
+<td>SPF1 link   status   indication</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>The green   light is   always on</td>
+<td>The internal link is   established normally</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Key skill indicators </p>
+<p>The main skill indicators of the integrated base station are as follows: table 4Base station specifications</p>
+<table>
+<thead>
+<tr>
+<th>serial  number</th>
+<th>The name of the  metric</th>
+<th>Metric values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Frequency bands  are supported</td>
+<td>5G N41/N78</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Carrier fan  capacity</td>
+<td>One 100MHz 4T4R cell or two 100MHz 2T2R cells are supported</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The number of  users in the cell</td>
+<td>Each cell supports no less than 64 active users and no less than  200 RRC connected users.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Channel bandwidth  is supported</td>
+<td>IBW 100MHz, carrier bandwidth supports 20MHz, 40MHz, 50MHz, 60MHz,  80MHz, 100MHz</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Maximum transmit  power</td>
+<td>4 channels, 250mW per channel</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Device   synchronization  mode</td>
+<td>IEEE1588v2 clock synchronization is supported</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3</strong> / <strong>55</strong> </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">7</th>
+<th style="text-align: left;">size</th>
+<th style="text-align: left;">306mm*234mm*67mm (length * width * height).</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">weight</td>
+<td style="text-align: left;">3.6kg</td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">Power supply mode</td>
+<td style="text-align: left;">Quad DC 12V Supply, Voltage Range ± 10%</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">antenna</td>
+<td style="text-align: left;">External antennas</td>
+</tr>
+<tr>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">Operating   temperature</td>
+<td style="text-align: left;">Long-term working temperature: -40°C\~+50°C</td>
+</tr>
+<tr>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">Operating relative  humidity</td>
+<td style="text-align: left;">10％～95％</td>
+</tr>
+</tbody>
+</table>
+<p>3 Instructions for use of base station operation All changes to the parameters in this section must be restarted to take  effect. <br />
+Base station provisioning process </p>
+<p>3.1.1 Parametric planning </p>
+<p>Table 4 lists the parameters required for base station activation. table 5Parameter planning table </p>
+<table>
+<thead>
+<tr>
+<th>Parametric planning</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The name of the  parameter</td>
+<td>illustrate</td>
+</tr>
+<tr>
+<td>IP address of the  base station   service</td>
+<td>eGTPU-IP 地址、NGAP-IP 地址,与核心网 N2/N3 可进行 ping 通。</td>
+</tr>
+<tr>
+<td>Frequency of work</td>
+<td>Frequency of community work</td>
+</tr>
+<tr>
+<td>Working bandwidth</td>
+<td>Cell operating bandwidth</td>
+</tr>
+<tr>
+<td>Frame structure</td>
+<td>Cell working frame structure</td>
+</tr>
+<tr>
+<td>Antenna mode</td>
+<td>2T2R/4T4R/2T2R-KS（天线复制模式）</td>
+</tr>
+<tr>
+<td>PLMN</td>
+<td>Consistent with the core network</td>
+</tr>
+<tr>
+<td>PCI</td>
+<td>Physical cell identification</td>
+</tr>
+<tr>
+<td>TAC</td>
+<td>Cell tracking area code</td>
+</tr>
+<tr>
+<td>NG interface IP</td>
+<td>IP address of the core network AMF</td>
+</tr>
+</tbody>
+</table>
+<p>3.1.2 Hardware connection checks </p>
+<p>As shown in Figure 3, check the wiring of the device before powering  on to ensure that the line connection is correct, as follows: a) Check the power connection to  </p>
+<p>ensure that the power cord is properly connected to the DC 12V  power module and that the connection is tightened and not loose. </p>
+<p><strong>4</strong> / <strong>55</strong> </p>
+<p>b) Check the connection of the antenna port  </p>
+<p>to ensure that the RF port of the base station is connected to the  antenna and ensure that the connection is not loose.  </p>
+<p>c) Check the 1588 to  </p>
+<p>make sure that the optical port is connected to a clock server and  that the clock signal can be synchronized.  </p>
+<p>d) Optical port inspection </p>
+<p>Make sure that optical port 1 is connected to the core network or  is on the same switch as the core network, and the optical module  rate is 10 Gbit/s. </p>
+<p>3.1.3 The device is powered on </p>
+<p>When the hardware connection check is completed, the device can be  powered on (DC12V), and the base station can be started after 3 minutes of  power-on, and the power indicator is always on. <br />
+3.1.4 Base station parameter configuration </p>
+<p>3.1.4.1 login </p>
+<p>Connect the computer to the GE interface of the base station, enter  the 172.20.50.1 (default) address in the browser to enter the LMT login  page; You can also log in by connecting the computer to the optical port  and entering the optical port address </p>
+<p>On the login page, you can click [Verification Code] to switch, fill  in the correct user name, password, and verification code, and click [Login]  to enter the LMT system, as shown in the figure. </p>
+<p>Account: admin </p>
+<p>Password: lmt_2023</p>
+<p><strong>5</strong> / <strong>55</strong> </p>
+<p>3.1.4.2 Modify the IP address of the base station </p>
+<p>After logging in to LMT, click [Configuration Management] -- [Basic  Configuration] -- change the eth0 address to Chapter 3.1.1 to plan the IP  address of the base station business, if you need to add multiple IPs,  click [addresses] -- click [+] to add, and then click [Save]. </p>
+<p>3.1.4.3 Frequency/frame structure/channel number configuration </p>
+<p>After logging in to LMT, click [Quick Configuration] -- [Quick Station  Opening] -- click [cell 333] --- select the frequency, frame structure and <br />
+<strong>6</strong> / <strong>55</strong> </p>
+<p>number of antennas -- and then click [Open Station]. </p>
+<p>The following table describes the number of antennas: </p>
+<p>2T2R：1、4 port TX and RX </p>
+<p>4T4R：1、2、3、4 port TX and RX </p>
+<p>2T2R-KS: 1 or 2 channels to 3 or 4 channels (antenna connection 1, 2  or 2 or 4) </p>
+<p>3.1.4.4 Clock modifications </p>
+<p>After logging in to LMT, click [Quick Configuration] -- [Quick Station  Opening] -- click [Base Station Parameters] -- configure [Clock Source  Configuration] to 0 -- and then click [Open Station].  </p>
+<p>Parameter description: </p>
+<p>0：1588  </p>
+<p>1: GNSS (not supported by this device) </p>
+<p>2:Freerun </p>
+<p>3.1.4.5 NG transport configuration </p>
+<p>After logging in to LMT, click [Quick Configuration] -- [Quick Site  Opening] -- Click [Base Station Parameters] -- CU_eGTPU-IP Address,  CU_NGAP-IP Address, CU_XNAP-IP Address, and AMF Server Address to the </p>
+<p><strong>7</strong> / <strong>55</strong> </p>
+<p>address planned in Chapter 3.1.1 -- and then click [Open Site]. If the N2 and N3 addresses of the core network are different, follow  this step.CU_eGTPU </p>
+<p>Click [Quick Configuration] -- [Quick Search] -- fill in  IPInterfaceIPAddress in the search box, then click the Enter key, modify  the IP according to the response shown below, and then click [Save and  Deliver]. <br />
+3.1.4.6 PLMN configuration </p>
+<p>After logging in to LMT, click [Quick Opening] -- [Operator ID] -- Modify PLMN that is consistent with the core network -- Click [Open Site]. <strong>8</strong> / <strong>55</strong> </p>
+<p>3.1.4.7 TAC configuration </p>
+<p>After logging in to LMT, click [Quick Opening] -- [Important Parameters  of the Community] -- [Basic Configuration] -- Modify the code of the 5GS  tracking area to be consistent with the core network -- click [Open Site]. </p>
+<p>3.1.4.8 Slice configuration </p>
+<p>After logging in to LMT, click [Quick Opening] -- [Network Slicing] - - Modify the Slice_SST and Slice_SD to be consistent with the core network  -- click [Open Site]. </p>
+<p>3.1.5 Device restart </p>
+<p>After the parameters are configured, restart the device for the  </p>
+<p>parameters to take effect. </p>
+<p>After logging in to LMT, click [Overview] -- click [Restart Device] - - click [OK].</p>
+<p><strong>9</strong> / <strong>55</strong> </p>
+<p>3.1.6 Cell status inquiry <br />
+After logging in to LMT, click [Overview] -- [Community Information]  to view the running status of the community, and if it is activated, the  community will be established successfully.  </p>
+<p>Commonly used function configurations </p>
+<p>3.2.1 Maximum transmit power modified </p>
+<p>After logging in to LMT, click [Quick Configuration] -- [Common  Configuration] -- enter the power to be modified in the power value (the  unit is dbm, and it will be automatically calculated as W after input) -- and then click [Save].</p>
+<p><strong>10</strong> / <strong>55</strong> </p>
+<p>3.2.2 Software version upgrades </p>
+<p>After logging in to LMT, click [Software Management] -- [Base Station  Upgrade] -- Click [Upload File] to upload the upgrade package -- click [OK]  -- if the cell is in a fault state before the upgrade, the rollback policy  should be turned off -- click [Upgrade]. </p>
+<p>Rollback policy: If the detection cell is not activated after the  </p>
+<p>upgrade, the version will be rolled back. </p>
+<p>During the restart phase of the upgrade process, you need to wait for  the restart to complete the automatic connection on the current page, or  you can manually refresh it later. </p>
+<p>3.2.3 Neighbors are added </p>
+<p>Measurement Event Interpretation: </p>
+<p>A1: The service cell is better than a certain threshold, and the  measurement is turned off, and the unit is dBm </p>
+<p>A2: If the service cell is below a certain threshold, open the  measurement, in dbm </p>
+<p>A3: The adjacent cell is better than the current service cell by a </p>
+<p><strong>11</strong> / <strong>55</strong> </p>
+<p>certain value, which is mostly used for co-frequency switching, and the  unit is db </p>
+<p>A4: The adjacent cell is better than a certain threshold, and it is  mostly used for different frequency switching, in dbm </p>
+<p>A5: The service cell is lower than a certain threshold, and the adjacent  cell is better than a certain threshold, which is mostly used for frequency  switching, unit dBm </p>
+<p>B1: The adjacent area of the different system is better than a certain  threshold, and it is mostly used for the switching of different systems,  in dbm </p>
+<p>B2: The service cell is lower than a certain threshold value, and the  adjacent cell of the different system is better than a certain threshold  value, which is mostly used for different frequency switching, unit dBm 3.2.3.1 Measure switch configuration </p>
+<p>1&gt; Turn on the A1/A2 measurement switch:  </p>
+<p>After logging in to LMT, click [Configuration Management] -- [Base  Station] -- [CU] -- [Power Control Information] -- [Default Measurement  Parameter Configuration during UE Initial Access] -- Change [A1  Measurement Switch] and [A2 Measurement Switch Configuration] to 1 -- </p>
+<p>click [Save and Issue].  </p>
+<p>2&gt; Turn on the A3 measurement switch of the same frequency:  </p>
+<p>Simultaneous frequency switching changes this configuration; After logging in to LMT, click [Configuration Management] -- [Base  Station] -- [CU] -- [Power Control Information] -- [Default Measurement <br />
+<strong>12</strong> / <strong>55</strong> </p>
+<p>Parameter Configuration during UE Initial Access] -- Change [Same  </p>
+<p>Frequency A3 Measurement Switch] to 1 -- Click [Save and Issue].  3&gt; Turn on the A4 measurement switch:  </p>
+<p>Change this configuration if the frequency is switched; </p>
+<p>After logging in to LMT, click [Configuration Management] -- [Base  Station] -- [CU] -- [Power Control Information] -- [Measurement  Parameter Configuration after A2 Measurement Received] -- Change  [Frequency A4 Measurement Switch] to 1 -- Click [Save and Issue].  <br />
+3.2.3.2 Measurement configuration </p>
+<p>1&gt; Measurement Configuration:  </p>
+<p>The default can be used for co-frequency measurement; </p>
+<p>The cross-frequency measurement configuration is as follows: After logging in to LMT, click [Neighborhood Management] -- [Neighborhood Management] --[Linkage Area Configuration]-- [MeasControlLsit]--[MeasContro[name=meas1]]-- </p>
+<p>[InterFreq[InterFreq[MeasContro[name=meas1]]--[InterFreq[InterFreq--</p>
+<p><strong>13</strong> / <strong>55</strong> </p>
+<p>Click [+] - fill in the ssb frequency, subcarrier spacing, and BAND of  the adjacent cell - click [OK]. </p>
+<p>(Multiple transience measurements can be added) </p>
+<p>2&gt; Measurement Event Thresholds:  </p>
+<p>Log in to LMT and click [Neighborhood Management] -- [Neighborhood  Configuration]--[MeasControlLsit]--[MeasContro[name=meas1]]-- [EventConfig]--[A1Event]--点击[TriggerQuantityThreshold]-- Configure  the corresponding event type according to the event type enabled in  conjunction with the measurement switch, and set the corresponding  value for [ThresholdRSRP].  </p>
+<p>ThresholdRSRP Parameter definition: 156 minus this parameter is the  </p>
+<p>absolute value dbm</p>
+<p><strong>14</strong> / <strong>55</strong> </p>
+<p>Example: </p>
+<p>A1 Event Configuration: </p>
+<p>If ThresholdRSRP is set to 81, the corresponding threshold value is  156-81=75 dBm.  </p>
+<p>3.2.3.3 Add neighbors </p>
+<p>3&gt; To add a co-frequency neighbor:  </p>
+<p>a) Log in to LMT and click [Neighborhood Management] -- [Neighborhood  Configuration]--[NeighborList]--[IntraFreqCell]--Click [+] -- Fill  in the neighboring area PLMN,CID,SCS,PCI,TAC — Click OK.<br />
+<strong>15</strong> / <strong>55</strong> </p>
+<p>b) Configure BAND </p>
+<p>Click on the neighbors that have been added—click[NRTDDInfo]-- [NRFreqBandList]--[NRFreqBandItem]-- Modify the band value - Click  [Save &amp; Deliver]. <br />
+c) Configure the SSB frequency </p>
+<p>Click on the added neighborhood—click [MTC]--[MeasTimingItem]-- modify the ssb frequency—click [Save and Deliver]. <br />
+d) Multiple PLMNs can be added to the same frequency neighborhood Click on the added neighborhood—click [+] - fill in PLMN - click [OK]. </p>
+<p><strong>16</strong> / <strong>55</strong> </p>
+<p>4&gt; To add a frequency neighbor:  </p>
+<p>a) Log in to LMT and click [Neighborhood Management] -- [Neighborhood  Configuration]--[NeighborList]--[InterFreqCell]--点击[+]-- Fill in  the neighboring cell’s PLMN, CID, SSB frequency number,SCS,  PCI,TAC,BAND — Click OK.<br />
+<strong>17</strong> / <strong>55</strong> </p>
+<p>4 Instructions for using the LMT interface </p>
+<p>In the operation instructions, the login user is the administrator  permission, and the system can support the current mainstream browsers  including Chrome 85 or above (recommended), Edge85 or above, and Firefox  79 or above. <br />
+LMT landing page </p>
+<p>Enter the correct management port (default 172.20.50.1) or optical port  address in the browser to enter the LMT login page. </p>
+<p>On the login page, you can click [Verification Code] to switch, fill  in the correct user name, password, and verification code, and click [Login]  to enter the LMT system, as shown in the figure. </p>
+<p>Account: admin </p>
+<p>Password: lmt_2023 </p>
+<p>system </p>
+<p>4.2.1 The menu bar collapses/expands with the current page  position </p>
+<p>The left side of the system is the operation menu, you can click the  button in the lower left corner [Collapse/Expand] menu bar; The upper right  corner is the title of the current main page, which is automatically updated  with page switching. As shown in Fig.</p>
+<p><strong>18</strong> / <strong>55</strong> </p>
+<p>4.2.2 Customize the device name </p>
+<p>The middle part is the current device name, you can click [Name] to  enter the editing mode (the maximum custom name is 20 characters), as shown  in the figure. <br />
+4.2.3 The operating status of the device </p>
+<p>The right side of the device name displays the current running status  of the device, you can click Refresh, and it supports automatic refresh  configuration, configuration location: [System Management/System  Configuration -- Auto Refresh/Base Station Status]</p>
+<p><strong>19</strong> / <strong>55</strong> </p>
+<p>4.2.4 SSH </p>
+<p>The upper right corner of the system is the global operation button,  </p>
+<p>click [SSH] to enter the command line mode, as shown in the figure. </p>
+<p>4.2.5 Restart your device </p>
+<p>Click [Restart device] to automatically identify the current restart  type, click restart and wait on the current page, and the system can be  automatically connected after the restart is successful.</p>
+<p><strong>20</strong> / <strong>55</strong> </p>
+<p>4.2.6 Download the how-to </p>
+<p>Click [Current User] and drop down menu [Operation Instructions] to  download the current version of the operation instructions to the local  computer. <br />
+4.2.7 Change your password </p>
+<p>Click [Change Password], you can enter the original password/new  password and click [OK] to change the password, and you need to log in  again after changing the password.</p>
+<p><strong>21</strong> / <strong>55</strong> </p>
+<p>4.2.8 Restart LMT </p>
+<p>Click Restart LMT and Confirm to restart LMT. </p>
+<p>4.2.9 Sign out </p>
+<p>Click Sign Out and Confirm to log out of the current user login status.</p>
+<p><strong>22</strong> / <strong>55</strong> </p>
+<p>Overview </p>
+<p>On the overview page, the device running status, alarm information,  base station information, 5GC running status, UPF running status, PLF  running status, RAN running status, OAM running status, base station  capability, and cell information are displayed as follows. <br />
+4.3.1 Device resource usage </p>
+<p>Display and update the CPU, memory (hover over [Memory Usage] to display  the total memory, used memory, and available memory), disk usage, and  change trend in real time, as shown in the figure, click [View Details] to  jump to the real-time information details page, and display the CPU usage  </p>
+<p>by core (please refer to the 2.4 Real-time Information section).<strong>23</strong> / <strong>55</strong> </p>
+<p>4.3.2 The operating status of the device </p>
+<p>The device information, startup time, and running duration are  </p>
+<p>displayed, as shown in the figure. </p>
+<p>4.3.3 Board temperature </p>
+<p>Display and update the board temperature and trend in real time, as  </p>
+<p>shown in the figure. </p>
+<p>4.3.4 GPS information </p>
+<p>Display GPS information, including: latitude and longitude, altitude,  signal strength, as shown in the figure.</p>
+<p><strong>24</strong> / <strong>55</strong> </p>
+<p>4.3.5 Alarm information </p>
+<p>To display the statistics of the four levels of alarms that are  currently active, click Refresh Information to manually refresh the  statistics (see 2.13 System Management/System Configuration for automatic  refresh configuration), and click View Details to jump to the alarm  information details page (see 2.10 Alarm Management), as shown in the  figure. <br />
+4.3.6 Base station information </p>
+<p>Displays the basic information of the current base station, including  the serial number, hardware version, software version, and clock source  information, as shown in the figure.</p>
+<p><strong>25</strong> / <strong>55</strong> </p>
+<p>4.3.7 The running status of the PLF/RAN/OAM service Display the PLF/RAN/OAM running status, startup time, and running  duration, click the Refresh Status button to refresh the current running  status, and click the Start/Stop button to start and stop the corresponding  service, as shown in the figure. </p>
+<p>4.3.8 Base station capabilities </p>
+<p>The specific capabilities of the current base station are displayed,  </p>
+<p>as shown in the figure. </p>
+<p>4.3.9 Community information </p>
+<p>Displays all cells of the current device, and supports manual refresh </p>
+<p><strong>26</strong> / <strong>55</strong> </p>
+<p>of the cell running status, as shown in the figure. </p>
+<p>Real-time information </p>
+<p>4.4.1 Operational status </p>
+<p>Display and update base station information in real time: RRC access  success rate, number of UEs, antenna RSSI, board temperature, support for  custom update frequency, configuration location [system management/system  configuration -- automatic refresh/real-time information/base station  information]; </p>
+<p>Display and update device information in real time: CPU core usage,  memory usage, update frequency 1s; </p>
+<p>As shown in Fig.</p>
+<p><strong>27</strong> / <strong>55</strong> </p>
+<p>Rapid provisioning </p>
+<p>4.5.1 Quick start </p>
+<p>4.5.1.1 Parameter modification/site opening </p>
+<p>After the corresponding parameter device value column is modified,  click [Changed Parameters] to view the current modified parameters, click  the [Delete] button to delete the modifications, restore the parameter  values, and after all the modified parameters are verified, click [Open  </p>
+<p>Station] and [Confirm] to save and distribute, as shown in the figure.</p>
+<p><strong>28</strong> / <strong>55</strong> </p>
+<p>4.5.1.2 Modify associated parameters </p>
+<p>After the main parameters of the associated parameters are modified,  other parameters in the same group are automatically synchronized to the  modified state, and the non-primary parameters can be modified separately  </p>
+<p>again, as shown in the figure. </p>
+<p>4.5.1.3 Export the template </p>
+<p>Click Export Template to export all the parameters of the current fast  website as a template .xlsx format file, as shown in the figure.</p>
+<p><strong>29</strong> / <strong>55</strong> </p>
+<p>4.5.1.4 Import parameters </p>
+<p>After modifying the required device values in the export template,  click [Import Parameters], select the file and click [OK] to perform the  correct parameter import, the imported parameters will automatically match  the modified values and update them on the page, and then click [Open Site]  </p>
+<p>to send them after checking that they are correct. </p>
+<p>4.5.1.5 Site opening guidance </p>
+<p>Menu: [Quick Configuration/Quick Station Opening] </p>
+<p>You can quickly switch/configure the main parameters through the  navigation items, including: base station basic information, network  management information, and each cell parameter, as shown in the figure.</p>
+<p><strong>30</strong> / <strong>55</strong> </p>
+<p>4.5.2 Quick search </p>
+<p>Menu: [Quick Configuration/Quick Search] </p>
+<p>4.5.2.1 Parametric search </p>
+<p>Support parameter name fuzzy search, can be automatically prompted  according to the input character, [Enter] or click the [Search] button to  perform the search, the results will highlight the keyword (up to 64 search  results are displayed, more results need to be re-searched with precise  search conditions), as shown in the figure. </p>
+<p>4.5.2.2 Modify &amp; Save </p>
+<p>The modification and saving of search parameters are the same as those  in 2.5.1. <br />
+4.5.2.3 Parameter positioning </p>
+<p>Click Parameter Name to automatically jump to the specific  configuration structure of the parameter under configuration management,  as shown in the figure.</p>
+<p><strong>31</strong> / <strong>55</strong> </p>
+<p>4.5.3 Common configurations </p>
+<p>It supports modifying the power value of the cell, [Enter] or clicking  [Save] (the save button will automatically appear after the power value is  modified) to send it, as shown in the figure. </p>
+<p>Configuration management <br />
+4.6.1 Basic configuration </p>
+<p>4.6.1.1 Network configuration </p>
+<p>Menu: [Configuration Management/Basic Configuration] </p>
+<p>Display the current network configuration, hover over each node, and  display the operation items supported by the node; </p>
+<p>Click the node to modify it, and click the icon on the right to perform </p>
+<p><strong>32</strong> / <strong>55</strong> </p>
+<p>related operations, as shown in the figure. </p>
+<p>4.6.1.2 Time zone configuration </p>
+<p>Menu: [Configuration Management/Basic Configuration] </p>
+<p>The time zone can be modified, as shown in the figure.</p>
+<p><strong>33</strong> / <strong>55</strong> </p>
+<p>4.6.2 Security configuration </p>
+<p>4.6.2.1 Generic configuration </p>
+<p>Menu: [System Administration/Security Configuration] </p>
+<p>Support to display the status, display and modify the pre-shared key,  ConfigDeploy, and switches, and click [Confirm] to modify the switch after  </p>
+<p>toggling the [Switch] state, as shown in the figure. </p>
+<p>Click [Configuration] to modify the pre-shared key/ConfigDeploy, and  </p>
+<p>click [Save and Deliver] to perform the delivery operation, as shown in  </p>
+<p>the figure. </p>
+<p>4.6.2.2 Channel configuration </p>
+<p>Displays all channel configuration information, supports adding and  deleting channels, and modifies channel parameters, as shown in the figure.</p>
+<p><strong>34</strong> / <strong>55</strong> </p>
+<p>4.6.3 QOS </p>
+<p>MENU: [CONFIGURATION MANAGEMENT/QOS] </p>
+<p>4.6.3.1 Key messages </p>
+<p>THE MAIN QOS INFORMATION OF EACH CELL IS DISPLAYED IN THE FORM OF A  LIST OF CELLS, AS SHOWN IN THE FIGURE. <br />
+4.6.3.2 QOS CONFIGURATION </p>
+<p>CLICK THE [QOS CONFIGURATION] BUTTON ON THE "MAIN INFORMATION"  INTERFACE TO SWITCH TO THE QOS DETAILED PARAMETER CONFIGURATION INTERFACE,  CLICK THE [ADD] BUTTON ABOVE THE CONFIGURATION STRUCTURE TREE TO PERFORM  ADD, AND CLICK THE [DELETE] BUTTON ON THE RIGHT SIDE OF THE QOS NODE OF </p>
+<p><strong>35</strong> / <strong>55</strong> </p>
+<p>THE CONFIGURATION STRUCTURE TREE TO DELETE IT, AND THE MODIFICATION  OPERATION IS THE SAME AS 2.5.1 QUICK OPENING OF THE SITE, AS SHOWN IN THE  </p>
+<p>FIGURE. </p>
+<p>4.6.4 base station </p>
+<p>4.6.4.1 Profiles </p>
+<p>Menu: [Configuration Management/Base Station/Configuration File] Displays all configuration files of the current base station. Upload file: Click Upload File, select the configuration file and click  OK to perform the upload, as shown in the figure. </p>
+<p>➢ Export File: Click [Export File] to export the current configuration of the device, as shown in the <br />
+<strong>36</strong> / <strong>55</strong> </p>
+<p>figure; </p>
+<p>➢ Add a note: Click the [Edit] button in the comment column to customize the note information for  </p>
+<p>the specified profile, and click [OK] to submit, as shown in the figure; </p>
+<p>➢ Import configuration file: Click the [Import] button to import the specified configuration for the  </p>
+<p>device, as shown in the figure, you <strong>need to wait for the service to restart after the prompt message  is completed before proceeding with other operations</strong>;  </p>
+<p>➢ Download the configuration file: Click the [Download] button to download the specified  configuration file to the local computer, as shown in the figure. </p>
+<p>➢ Delete a profile: Click the [Delete] button to delete the specified profile, as shown in the figure.</p>
+<p><strong>37</strong> / <strong>55</strong> </p>
+<p>4.6.4.2 OAM </p>
+<p>Menu: [Configuration Management/Base Station/OAM] </p>
+<p>Parameter information can be displayed by category, and the parameters  of CU, DU, PHY, PLF, and OAMCFG can be saved and delivered in a unified  manner (the modification and delivery operations are the same as those in  2.5.1 Quick Start), and the main view of the classification and the main  view of the parameter list can be switched, as shown in the figure. <br />
+Click Parameter Name to view the parameter definition information, as shown in the figure.</p>
+<p><strong>38</strong> / <strong>55</strong> </p>
+<p>4.6.4.3 WITH </p>
+<p>菜单：[配置管理/基站/CU] </p>
+<p>The operation is the same as OAM. </p>
+<p>4.6.4.4 Of the </p>
+<p>Menu: [Configuration Management/Base Station/DU] </p>
+<p>The operation is the same as OAM. </p>
+<p>4.6.4.5 PLF </p>
+<p>Menu: [Configuration Management/Base Station/PLF] </p>
+<p>The operation is the same as OAM. </p>
+<p>4.6.4.6 OAMCFG </p>
+<p>Menu: [Configuration Management/Base Station/OAMCFG] </p>
+<p>The operation is the same as OAM. </p>
+<p>4.6.5 Parameter comparison </p>
+<p>Menu: [Configuration Management/Parameter Comparison] </p>
+<p>To display the list of uploaded profiles, you can edit  notes/download/delete, click the [Compare] button to compare the parameter  differences between the selected profiles and the current device, wait for  the comparison to be completed, and display the list of differences by  parameter category (filter by category is supported), as shown in the  figure.</p>
+<p><strong>39</strong> / <strong>55</strong> </p>
+<p>Software management </p>
+<p>4.7.1 Base station upgrades </p>
+<p>Menu: [Software Management/Base Station Upgrade] </p>
+<p>Displays the current software version and all upgrade file information,  and supports modifying the rollback policy and uploading the upgrade file,  as shown in the figure.</p>
+<p><strong>40</strong> / <strong>55</strong> </p>
+<p>Click [Upgrade] and [Confirm] to execute the upgrade file, as shown in  the figure, and display the real-time upgrade progress when the upgrade is  executed. </p>
+<p>During the restart phase of the upgrade process, you need to wait for  the restart to complete the automatic connection on the current page, or  you can manually refresh it later. </p>
+<p>Specify the upgrade file, click [Delete] and [Confirm] to delete the  upgrade file, as shown in the figure.</p>
+<p><strong>41</strong> / <strong>55</strong> </p>
+<p>4.7.2 Version switching </p>
+<p>Menu: [Software Management/Version Switching] </p>
+<p>Displays the version information of all installed software of the  current base station, identifies the conflicting version and the current  version, and supports version switching, deletion, and information refresh,  as shown in the figure. <br />
+Community management </p>
+<p>Menu: [Community Management] </p>
+<p>4.8.1 Community information </p>
+<p>Displays all the basic information of the community. </p>
+<p>➢ Create a community: Click [Create Community], enter the cell name, and click [Confirm] to create  </p>
+<p>the community, as shown in the figure;</p>
+<p><strong>42</strong> / <strong>55</strong> </p>
+<p>➢ Update Template: Click [Update Template], select the template community and [Confirm] execution,  as shown in the figure; </p>
+<p>➢ Refresh the cell running status: Click the [Refresh] button to re-obtain the cell running status; ➢ Activation/deactivation: Click the [Activate]/[Deactivate] button of the designated cell to perform  the activation/deactivation operation; </p>
+<p>➢ Cell configuration: Click the [Configuration] button of the designated cell to jump to the cell  configuration page (see the next section on cell configuration); </p>
+<p>➢ Delete the cell: Click the [Delete] button and [Confirm] to delete the cell. </p>
+<p>4.8.2 Community initiation process </p>
+<p>Click on the cell list/current running status to view the cell startup  process, as shown in the figure.<br />
+<strong>43</strong> / <strong>55</strong> </p>
+<p>4.8.3 Cell configuration </p>
+<p>Click the [Configuration] button of the specified community to jump to  the cell configuration page, you can modify the corresponding parameters,  and execute the save and delivery (the operation is the same as 2.5.1 to  quickly open the station), as shown in the figure. </p>
+<p>Neighborhood management <br />
+Menu: [Neighborhood Management] </p>
+<p>4.9.1 Neighborhood information </p>
+<p>To display the 5G/4G neighborhood information under each cell, click  [Neighborhood Configuration] to jump to the neighborhood configuration page,  </p>
+<p>as shown in the figure. </p>
+<p>4.9.2 Neighborhood configuration </p>
+<p>Display the parameters of the neighborhood, support modify/save the </p>
+<p><strong>44</strong> / <strong>55</strong> </p>
+<p>delivery (the same as 2.5.1 quick site opening), and support add/delete,  where add is to add sub-parameters, and delete is to delete this level of  </p>
+<p>parameters, as shown in the figure. </p>
+<p>You can select a template cell and update the template, as shown in  </p>
+<p>the figure. </p>
+<p>Alarm management </p>
+<p>Menu: [Alarm Management] </p>
+<p>Displays the current active alarms, historical alarms, and event alarm  information, and the automatic update cycle can be configured (please refer  to 2.13 System Management/System Configuration for automatic refresh  configuration), supports manual refresh, and supports clicking [Alarm  Number] to view the alarm knowledge base, as shown in the figure.</p>
+<p><strong>45</strong> / <strong>55</strong> </p>
+<p>Performance management </p>
+<p>4.11.1 counter </p>
+<p>Menu: [Performance Management/Counter] </p>
+<p>All counter groups are displayed, you can select counter groups, view  the corresponding counter data by category, and export all/manually refresh,  as shown in the figure.</p>
+<p><strong>46</strong> / <strong>55</strong> </p>
+<p>4.11.2 KPI </p>
+<p>Menu: [Performance Management/KPI] </p>
+<p>View KPIs by category, support export all/manual refresh, as shown in  the figure. </p>
+<p>4.11.3 Real-time counting </p>
+<p>Menu: [Performance Management/Real-Time Counting] </p>
+<p>The count information is updated in real time, and the auto-refresh  frequency can be modified (for details about the auto-refresh configuration,  see 2.13 System Management/System Configuration), as shown in the figure.</p>
+<p><strong>47</strong> / <strong>55</strong> </p>
+<p>Log management </p>
+<p>4.12.1 Base station logs </p>
+<p>Menu: [Log Management/Base Station Log] </p>
+<p>Displays the base station logs of the current version and previous  versions. </p>
+<p>It contains logs such as CU and DU, and displays the total size of logs  in the current category, the folder where the current logs are located,  and the list of all logs. </p>
+<p>Support fuzzy search by name in the current display list; 支持修改 CU/DU/OAM/PHY 日志级别; </p>
+<p>Support deleting/batch deletion of log files (folders); </p>
+<p>Support online viewing/downloading of log files; </p>
+<p>As shown in Fig.</p>
+<p><strong>48</strong> / <strong>55</strong> </p>
+<p>4.12.2 System logs <br />
+Menu: [Log Management/System Log] </p>
+<p>The system logs are displayed, and the logs of the operation are the  same as the base station, as shown in the figure. </p>
+<p>System administration </p>
+<p>4.13.1 Scheduled tasks </p>
+<p>Menu: [System Administration/Scheduled Tasks] </p>
+<p>Displays the scheduled task file of the current device, which can be  edited/diff/saved, as shown in the figure.</p>
+<p><strong>49</strong> / <strong>55</strong> </p>
+<p>4.13.2 Parameter Authorization (Administrator) Menu: [System Management/Parameter Authorization] </p>
+<p>As shown in the figure, you can edit the visible/writable status of  parameters in the Configuration Administrator role, check multiple boxes  to determine whether the parameters are visible, and configure whether the  </p>
+<p>parameters are writable by using the writable switch. </p>
+<p><strong>Note: After the system is deployed, the administrator needs to authorize the parameters first,  and then the configuration administrator and the common user can perform normal operations.</strong> 4.13.3 Role Authorization (Administrator) </p>
+<p>Menu: [System Administration/Role Authorization] </p>
+<p>All user roles and corresponding operation permissions are displayed,  and administrators can modify and configure administrator permissions, as </p>
+<p><strong>50</strong> / <strong>55</strong> </p>
+<p>shown in the figure. </p>
+<p>4.13.4 User Management (Administrator) </p>
+<p>Menu: [System Administration/User Management] </p>
+<p>Displays all user information of the current system, supports  adding/deleting users (the current user cannot be deleted), and resetting  the password, as shown in the figure, in which you need to log in again  after resetting the current user password. </p>
+<p>4.13.5 System configuration </p>
+<p>Global configuration is supported: </p>
+<p>➢ Alarms, real-time information/base station information, real-time performance counting, cell  operation status, base station status (top row), service status (overview page) refresh frequency; ➢ Parameter list display column (whether to display the parameter path name/English name); ➢ The overview page displays the service items; <br />
+As shown in Fig.</p>
+<p><strong>51</strong> / <strong>55</strong> </p>
+<p><strong>52</strong> / <strong>55</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

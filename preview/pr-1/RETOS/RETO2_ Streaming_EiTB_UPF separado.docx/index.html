@@ -1,0 +1,2051 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Tknika">
+      
+      
+        <link rel="canonical" href="https://mydomain.org/mysite/RETOS/RETO2_%20Streaming_EiTB_UPF%20separado.docx/">
+      
+      
+        <link rel="prev" href="../RETO1_%20Configuraci%C3%B3n%20de%20red%205G_EiTB.docx/">
+      
+      
+        <link rel="next" href="../RETO3_%20Network%20Slicing_EiTB.docx/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>RETO2 Streaming EiTB UPF separado.docx - Documentación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Documentación" class="md-header__button md-logo" aria-label="Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              RETO2  Streaming EiTB UPF separado.docx
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Tknika/5g-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Tknika/5g-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentación" class="md-nav__button md-logo" aria-label="Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentación
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Tknika/5g-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Tknika/5g-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ONGI ETORRI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DESPLIEGUES
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            DESPLIEGUES
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DESPLIEGUES/INSTALAR%20open5gs%20CURSO2025_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    INSTALAR open5gs CURSO2025 2026
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DESPLIEGUES/Pasos%20a%20realizar_Comandos_NETWORK%20SLICING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NETWORK SLICING
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MANUALES DE USUARIO
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            MANUALES DE USUARIO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MANUAL ANALIZADOR DE ESPECTRO
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            MANUAL ANALIZADOR DE ESPECTRO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MANUALES%20DE%20USUARIO/MANUAL%20ANALIZADOR%20DE%20ESPECTRO/Instalaci%C3%B3n%20y%20configuraci%C3%B3n%20de%20la%20SDR%20Pluto%20y%20Soft%20Satsagen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Instalación y configuración de la SDR Pluto y Soft Satsagen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MANUAL CONFIGURAR SIMs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            MANUAL CONFIGURAR SIMs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MANUALES%20DE%20USUARIO/MANUAL%20CONFIGURAR%20SIMs/CONFIGURAR%20LAS%20SIMs%20DE%20OPEN-CELL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CONFIGURAR LAS SIMs DE OPEN CELL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MANUALES%20DE%20USUARIO/MANUAL%20CONFIGURAR%20SIMs/CONFIGURAR%20LAS%20SIMs%20DE%20SYSMOCOM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CONFIGURAR LAS SIMs DE SYSMOCOM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MANUAL gNB
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            MANUAL gNB
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    BAICELLS gNB
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            BAICELLS gNB
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/Data%20Sheet%20Stellar227%20gNB%20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Sheet Stellar227 gNB 
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/MANUAL%20BAICELLS%205G.docx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MANUAL BAICELLS 5G.docx
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/Manual%20OFICIAL%20gNB%20Baicells%20-%20Stellar227%20Indoor%20Installation%20Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Manual OFICIAL gNB Baicells   Stellar227 Indoor Installation Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    VANKOM gNB
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            VANKOM gNB
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MANUALES%20DE%20USUARIO/MANUAL%20gNB/VANKOM-gNB/MANUAL%20VANKOM%205G/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MANUAL VANKOM 5G
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MANUALES%20DE%20USUARIO/MANUAL%20gNB/VANKOM-gNB/Manual%20OFICIAL%20Vankom%20gNB-vkScell-g3%20v1.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Manual OFICIAL Vankom gNB vkScell g3 v1.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    RETOS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            RETOS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RETO1_%20Configuraci%C3%B3n%20de%20red%205G_EiTB.docx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RETO1  Configuración de red 5G EiTB.docx
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    RETO2  Streaming EiTB UPF separado.docx
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    RETO2  Streaming EiTB UPF separado.docx
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-la-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura de la red
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desarrollo-del-entrenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desarrollo del entrenamiento
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-de-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parámetros de configuración
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parámetros de configuración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equipo-1-core-5g-sin-upf" class="md-nav__link">
+    <span class="md-ellipsis">
+      EQUIPO 1 – Core 5G (sin UPF)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-principales-a-revisar-y-adaptar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parámetros principales a revisar y adaptar:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direccion-ip-del-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dirección IP del Core.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces-n2-y-n4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfaces N2 y N4.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asociacion-con-smf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asociación con SMF.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminacion-del-upf-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eliminación del UPF local.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicion-de-upf-remoto-ip-n4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definición de UPF remoto (IP, N4).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equipo-2-upf-remoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      EQUIPO 2 – UPF remoto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direccion-ip-del-upf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dirección IP del UPF.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaz-n4-hacia-el-smf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfaz N4 hacia el SMF.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaz-n3-hacia-el-gnb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfaz N3 hacia el gNB.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enrutamiento-del-trafico-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enrutamiento del tráfico de usuario.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#salida-hacia-red-local-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Salida hacia red local / Internet.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Salida hacia red local / Internet.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parametros-a-configurar-en-la-vpn-mikrotik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parámetros a configurar en la VPN (Mikrotik)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direccion-ip-local-y-remota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dirección IP local y remota.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipo-de-vpn-ipsec-wireguard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipo de VPN (IPsec / WireGuard).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rutas-estaticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rutas estáticas:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-upf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core ↔ UPF
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upf-gnb" class="md-nav__link">
+    <span class="md-ellipsis">
+      UPF ↔ gNB
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-de-conectividad-ip-extremo-a-extremo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación de conectividad IP extremo a extremo.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comprobación de conectividad IP extremo a extremo.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parametros-a-revisar-en-la-radio-gnb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parámetros a revisar en la radio gNB
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direccion-ip-del-amf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dirección IP del AMF
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plmn" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLMN.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tac" class="md-nav__link">
+    <span class="md-ellipsis">
+      TAC.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnb-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      gNB ID.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asociaciones-n2-n3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asociaciones N2 / N3.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asociaciones N2 / N3.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-esquema-de-red-distribuida" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Esquema de red distribuida
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-separacion-del-upf" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Separación del UPF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-verificacion-de-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Verificación de funcionamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-analisis-de-rendimiento-y-latencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Análisis de rendimiento y latencia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-pasa-si" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué pasa si…?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusiones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      EXTRA
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RETO3_%20Network%20Slicing_EiTB.docx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RETO3  Network Slicing EiTB.docx
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-la-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura de la red
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desarrollo-del-entrenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desarrollo del entrenamiento
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-de-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parámetros de configuración
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parámetros de configuración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equipo-1-core-5g-sin-upf" class="md-nav__link">
+    <span class="md-ellipsis">
+      EQUIPO 1 – Core 5G (sin UPF)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-principales-a-revisar-y-adaptar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parámetros principales a revisar y adaptar:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direccion-ip-del-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dirección IP del Core.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces-n2-y-n4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfaces N2 y N4.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asociacion-con-smf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asociación con SMF.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminacion-del-upf-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eliminación del UPF local.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicion-de-upf-remoto-ip-n4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definición de UPF remoto (IP, N4).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equipo-2-upf-remoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      EQUIPO 2 – UPF remoto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direccion-ip-del-upf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dirección IP del UPF.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaz-n4-hacia-el-smf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfaz N4 hacia el SMF.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaz-n3-hacia-el-gnb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfaz N3 hacia el gNB.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enrutamiento-del-trafico-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enrutamiento del tráfico de usuario.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#salida-hacia-red-local-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Salida hacia red local / Internet.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Salida hacia red local / Internet.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parametros-a-configurar-en-la-vpn-mikrotik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parámetros a configurar en la VPN (Mikrotik)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direccion-ip-local-y-remota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dirección IP local y remota.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipo-de-vpn-ipsec-wireguard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipo de VPN (IPsec / WireGuard).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rutas-estaticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rutas estáticas:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-upf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core ↔ UPF
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upf-gnb" class="md-nav__link">
+    <span class="md-ellipsis">
+      UPF ↔ gNB
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-de-conectividad-ip-extremo-a-extremo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación de conectividad IP extremo a extremo.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comprobación de conectividad IP extremo a extremo.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parametros-a-revisar-en-la-radio-gnb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parámetros a revisar en la radio gNB
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direccion-ip-del-amf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dirección IP del AMF
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plmn" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLMN.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tac" class="md-nav__link">
+    <span class="md-ellipsis">
+      TAC.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnb-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      gNB ID.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asociaciones-n2-n3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asociaciones N2 / N3.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asociaciones N2 / N3.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-esquema-de-red-distribuida" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Esquema de red distribuida
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-separacion-del-upf" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Separación del UPF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-verificacion-de-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Verificación de funcionamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-analisis-de-rendimiento-y-latencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Análisis de rendimiento y latencia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-pasa-si" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué pasa si…?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusiones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      EXTRA
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>RETO2  Streaming EiTB UPF separado.docx</h1>
+
+<p><strong>CURSO INSTALACIÓN Y CONFIGURACIÓN DE REDES 5G</strong></p>
+<p><strong>“Caso de uso:</strong> <br />
+<strong>Retransmisión de eventos deportivos: gNB y UPF en San Mamés, Core en EiTB (Donostia)”</strong></p>
+<p><strong>Situación:</strong></p>
+<p>EiTB no solo produce contenidos en sus instalaciones, sino que también realiza <strong>retransmisiones deportivas en directo</strong>, por ejemplo partidos de fútbol en San Mamés.</p>
+<p>En este escenario aparecen nuevos requisitos técnicos:</p>
+<ul>
+<li>Necesidad de <strong>baja latencia</strong> para vídeo en tiempo real.  </li>
+<li>Elevado tráfico de subida (uplink).  </li>
+<li>Evitar que todo el tráfico de usuario tenga que volver al Core central.  </li>
+<li>Mayor resiliencia y escalabilidad de la red.</li>
+</ul>
+<p>Para cumplir estos requisitos, EiTB decide <strong>separar el plano de control y el plano de usuario</strong>, desplegando el <strong>User Plane Function (UPF)</strong> cerca del evento deportivo.</p>
+<p><strong>Servicios del escenario:</strong><br />
+La red debe dar servicio, al menos, a:</p>
+<ul>
+<li><strong>Terminal 1:</strong><br />
+   Móvil del personal técnico del estadio.<br />
+   Uso: comunicaciones y acceso a servicios corporativos.  </li>
+<li><strong>Terminal 2:</strong><br />
+   Cámara de vídeo / router 5G para retransmisión en directo.<br />
+   Uso: streaming de vídeo hacia la infraestructura de producción.</li>
+</ul>
+<p><img alt="" src="../img/reto2_image1.png" /><br />
+<strong>Imagen:</strong> Red privada 5G para streaming deportivo</p>
+<h2 id="_1"></h2>
+<h2 id="_2"></h2>
+<h2 id="_3"></h2>
+<h2 id="arquitectura-de-la-red"><strong>Arquitectura de la red</strong></h2>
+<p>La red 5G se distribuye geográficamente del siguiente modo:</p>
+<ul>
+<li>
+<p><strong>Core 5G (Open5GS sin UPF)</strong><br />
+   Ubicación: instalaciones de EiTB en Donostia.<br />
+   Funciones de control:</p>
+</li>
+<li>
+<p>AMF  </p>
+</li>
+<li>SMF  </li>
+<li>AUSF  </li>
+<li>UDM  </li>
+<li>NRF  </li>
+<li>
+<p><strong>UPF (Open5GS)</strong><br />
+   Ubicación: San Mamés (edge).<br />
+   Función: encaminamiento del tráfico de usuario.</p>
+</li>
+<li>
+<p><strong>Radio gNB</strong><br />
+   Ubicación: San Mamés.<br />
+   Proporciona cobertura radio en el estadio.</p>
+</li>
+<li>
+<p><strong>VPN (Mikrotik)</strong><br />
+   Interconecta:</p>
+</li>
+<li>
+<p>Core 5G ↔ UPF<br />
+     de forma segura a través de red IP.</p>
+</li>
+</ul>
+<h2 id="desarrollo-del-entrenamiento"><strong>Desarrollo del entrenamiento</strong></h2>
+<p>A partir de una red privada 5G ya funcional (Día 1), se procederá a:</p>
+<ul>
+<li>Separar el <strong>User Plane Function (UPF)</strong> del Core.  </li>
+<li>Desplegar el UPF en una <strong>ubicación remota</strong>.  </li>
+<li>Asegurar la conectividad mediante una VPN.  </li>
+<li>Verificar el impacto de esta arquitectura en la latencia y el rendimiento.</li>
+</ul>
+<h2 id="parametros-de-configuracion"><strong>Parámetros de configuración</strong></h2>
+<h3 id="equipo-1-core-5g-sin-upf"><strong>EQUIPO 1 – Core 5G (sin UPF)</strong></h3>
+<h2 id="parametros-principales-a-revisar-y-adaptar">Parámetros principales a revisar y adaptar:</h2>
+<ul>
+<li>
+<h2 id="direccion-ip-del-core">Dirección IP del Core.</h2>
+</li>
+<li>
+<h2 id="interfaces-n2-y-n4">Interfaces N2 y N4.</h2>
+</li>
+<li>
+<h2 id="asociacion-con-smf">Asociación con SMF.</h2>
+</li>
+<li>
+<h2 id="eliminacion-del-upf-local">Eliminación del UPF local.</h2>
+</li>
+<li>
+<h2 id="definicion-de-upf-remoto-ip-n4">Definición de UPF remoto (IP, N4).</h2>
+</li>
+</ul>
+<h2 id="_4"></h2>
+<h3 id="equipo-2-upf-remoto"><strong>EQUIPO 2 – UPF remoto</strong></h3>
+<ul>
+<li>
+<h2 id="direccion-ip-del-upf">Dirección IP del UPF.</h2>
+</li>
+<li>
+<h2 id="interfaz-n4-hacia-el-smf">Interfaz N4 hacia el SMF.</h2>
+</li>
+<li>
+<h2 id="interfaz-n3-hacia-el-gnb">Interfaz N3 hacia el gNB.</h2>
+</li>
+<li>
+<h2 id="enrutamiento-del-trafico-de-usuario">Enrutamiento del tráfico de usuario.</h2>
+</li>
+<li>
+<h2 id="salida-hacia-red-local-internet">Salida hacia red local / Internet.</h2>
+</li>
+</ul>
+<h3 id="parametros-a-configurar-en-la-vpn-mikrotik"><strong>Parámetros a configurar en la VPN (Mikrotik)</strong></h3>
+<ul>
+<li>
+<h2 id="direccion-ip-local-y-remota">Dirección IP local y remota.</h2>
+</li>
+<li>
+<h2 id="tipo-de-vpn-ipsec-wireguard">Tipo de VPN (IPsec / WireGuard).</h2>
+</li>
+<li>
+<h2 id="rutas-estaticas">Rutas estáticas:</h2>
+</li>
+<li>
+<h2 id="core-upf">Core ↔ UPF</h2>
+</li>
+<li>
+<h2 id="upf-gnb">UPF ↔ gNB</h2>
+</li>
+<li>
+<h2 id="comprobacion-de-conectividad-ip-extremo-a-extremo">Comprobación de conectividad IP extremo a extremo.</h2>
+</li>
+</ul>
+<h3 id="parametros-a-revisar-en-la-radio-gnb"><strong>Parámetros a revisar en la radio gNB</strong></h3>
+<ul>
+<li>
+<h2 id="direccion-ip-del-amf">Dirección IP del AMF</h2>
+</li>
+<li>
+<h2 id="plmn">PLMN.</h2>
+</li>
+<li>
+<h2 id="tac">TAC.</h2>
+</li>
+<li>
+<h2 id="gnb-id">gNB ID.</h2>
+</li>
+<li>
+<h2 id="asociaciones-n2-n3">Asociaciones N2 / N3.</h2>
+</li>
+</ul>
+<h3 id="1-esquema-de-red-distribuida"><strong>1. Esquema de red distribuida</strong></h3>
+<p>Realiza un <strong>esquema lógico</strong> donde se represente:</p>
+<ul>
+<li>Core 5G centralizado.  </li>
+<li>UPF en el edge.  </li>
+<li>gNB remoto.  </li>
+<li>VPN entre sedes.  </li>
+<li>Flujo del plano de control y del plano de usuario.</li>
+</ul>
+<p><strong>Resultado esperado:</strong><br />
+ Diagrama claro que muestre la separación CP / UP. </p>
+<h3 id="2-separacion-del-upf"><strong>2. Separación del UPF</strong></h3>
+<p>Configura la red para que:</p>
+<ul>
+<li>El Core 5G deje de manejar tráfico de usuario.  </li>
+<li>El UPF remoto gestione el tráfico de datos.  </li>
+</ul>
+<p>.</p>
+<h3 id="3-verificacion-de-funcionamiento"><strong>3. Verificación de funcionamiento</strong></h3>
+<p>Comprobar:</p>
+<ul>
+<li>Registro correcto del UE en red (NAS, AMF).  </li>
+<li>Establecimiento de sesión PDU.  </li>
+<li>Paso de tráfico IP a través del UPF remoto.</li>
+</ul>
+<p>Herramientas recomendadas:</p>
+<ul>
+<li>Logs del Core y del UPF.  </li>
+<li>Ping desde el UE.  </li>
+<li>Traceroute.  </li>
+<li>Capturas de tráfico.</li>
+</ul>
+<h3 id="4-analisis-de-rendimiento-y-latencia"><strong>4. Análisis de rendimiento y latencia</strong></h3>
+<ul>
+<li>Medir latencia y velocidad con:  </li>
+<li>UPF cercano (edge).  </li>
+<li>Comparar con:  </li>
+<li>UPF centralizado (Día 1).</li>
+</ul>
+<p>Registrar resultados en una <strong>tabla comparativa</strong>.</p>
+<h2 id="que-pasa-si"><strong>¿Qué pasa si…?</strong></h2>
+<p>Analiza y documenta el comportamiento de la red en los siguientes casos:</p>
+<ol>
+<li><strong>Se pierde la VPN entre Core y UPF</strong>  </li>
+<li>¿El UE sigue registrado?  </li>
+<li>¿Hay tráfico de datos?  </li>
+<li><strong>Se detiene el UPF remoto</strong>  </li>
+<li>¿Qué ocurre con la sesión PDU?  </li>
+<li>¿Qué mensajes aparecen en el SMF?  </li>
+<li><strong>El gNB apunta a un UPF incorrecto</strong>  </li>
+<li>¿Se registra el UE?  </li>
+<li>¿Hay conectividad IP?  </li>
+<li><strong>Aumenta la latencia entre Core y UPF</strong>  </li>
+<li>Impacto en el servicio.  </li>
+<li>Servicios más afectados (vídeo vs datos).</li>
+</ol>
+<h2 id="conclusiones"><strong>Conclusiones</strong></h2>
+<p>Responder y justificar:</p>
+<ul>
+<li>¿Por qué es clave separar el UPF en escenarios de eventos?  </li>
+<li>¿Qué ventajas aporta una arquitectura distribuida?  </li>
+<li>¿Qué servicios se benefician más del edge computing?</li>
+</ul>
+<h2 id="extra"><strong>EXTRA</strong></h2>
+<ul>
+<li>Implementar un <strong>radioenlace</strong> (o simulación de enlace limitado) entre Core y UPF.  </li>
+<li>Repetir las pruebas observando el impacto en:  </li>
+<li>Throughput.  </li>
+<li>Latencia.  </li>
+<li>Calidad del vídeo.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
