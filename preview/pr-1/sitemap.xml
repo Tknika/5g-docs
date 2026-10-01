@@ -2,58 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mydomain.org/mysite/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/DESPLIEGUES/INSTALAR%20open5gs%20CURSO2025_2026/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/0-%20GENERAL/JORNADAS%20T%C3%89CNICAS/Jornada%20sobre%20Pilotos%205G%20en%20Euskadi/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/DESPLIEGUES/Pasos%20a%20realizar_Comandos_NETWORK%20SLICING/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/0-%20GENERAL/NOTICIAS/Tknika%2C%20en%20el%20programa%20Teknopolis/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20ANALIZADOR%20DE%20ESPECTRO/Instalaci%C3%B3n%20y%20configuraci%C3%B3n%20de%20la%20SDR%20Pluto%20y%20Soft%20Satsagen/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/1-%20MANUALES%20DE%20USUARIO/MANUAL%20ANALIZADOR%20DE%20ESPECTRO/Instalaci%C3%B3n%20y%20configuraci%C3%B3n%20de%20la%20SDR%20Pluto%20y%20Soft%20Satsagen/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20CONFIGURAR%20SIMs/CONFIGURAR%20LAS%20SIMs%20DE%20OPEN-CELL/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/1-%20MANUALES%20DE%20USUARIO/MANUAL%20CONFIGURAR%20SIMs/CONFIGURAR%20LAS%20SIMs%20DE%20OPEN-CELL/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20CONFIGURAR%20SIMs/CONFIGURAR%20LAS%20SIMs%20DE%20SYSMOCOM/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/1-%20MANUALES%20DE%20USUARIO/MANUAL%20CONFIGURAR%20SIMs/CONFIGURAR%20LAS%20SIMs%20DE%20SYSMOCOM/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/Data%20Sheet%20Stellar227%20gNB%20/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/1-%20MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/Data%20Sheet%20Stellar227%20gNB%20/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/MANUAL%20BAICELLS%205G.docx/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/1-%20MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/MANUAL%20BAICELLS%205G.docx/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/Manual%20OFICIAL%20gNB%20Baicells%20-%20Stellar227%20Indoor%20Installation%20Guide/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/1-%20MANUALES%20DE%20USUARIO/MANUAL%20gNB/BAICELLS-gNB/Manual%20OFICIAL%20gNB%20Baicells%20-%20Stellar227%20Indoor%20Installation%20Guide/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/VANKOM-gNB/MANUAL%20VANKOM%205G/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/1-%20MANUALES%20DE%20USUARIO/MANUAL%20gNB/VANKOM-gNB/MANUAL%20VANKOM%205G/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/MANUALES%20DE%20USUARIO/MANUAL%20gNB/VANKOM-gNB/Manual%20OFICIAL%20Vankom%20gNB-vkScell-g3%20v1.0/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/1-%20MANUALES%20DE%20USUARIO/MANUAL%20gNB/VANKOM-gNB/Manual%20OFICIAL%20Vankom%20gNB-vkScell-g3%20v1.0/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/RETOS/RETO1_%20Configuraci%C3%B3n%20de%20red%205G_EiTB.docx/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/2-%20GU%C3%8DA%20DE%20DESPLIEGUES/HANDOVER%20BAICELLS/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/RETOS/RETO2_%20Streaming_EiTB_UPF%20separado.docx/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/2-%20GU%C3%8DA%20DE%20DESPLIEGUES/INSTALAR%20open5gs%20CURSO2025_2026/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/RETOS/RETO3_%20Network%20Slicing_EiTB.docx/</loc>
-         <lastmod>2026-06-23</lastmod>
+         <loc>https://mydomain.org/mysite/2-%20GU%C3%8DA%20DE%20DESPLIEGUES/Pasos%20a%20realizar_Comandos_NETWORK%20SLICING/</loc>
+         <lastmod>2026-10-01</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/3-%20BASE%20CONOCIMIENTOS/Enlaces%20de%20interes/</loc>
+         <lastmod>2026-10-01</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/4-%20TUTORIALES/PR%C3%81CTICAS/1.PR%C3%81CTICA_%20CONOCER%20EL%20ESPECTRO%20ELECTROMAGN%C3%89TICO%20%E2%80%93%20EL%20ESPECTRO%20RADIOEL%C3%89CTRICO%20-%20CUADRO%20NACIONAL%20DE%20ATRIBUCI%C3%93N%20DE%20FRECUENCIAS%20%28CNAF%29/</loc>
+         <lastmod>2026-10-01</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/4-%20TUTORIALES/PR%C3%81CTICAS/2.PR%C3%81CTICA_%20CONOCER%20LAS%20BANDAS%20ASIGNADAS%20A%20LA%20TELEFON%C3%8DA%20M%C3%93VIL%20CELULAR.%20REPARTO%20FRECUENCIAL%20ENTRE%20OPERADORES/</loc>
+         <lastmod>2026-10-01</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/4-%20TUTORIALES/PR%C3%81CTICAS/3.PR%C3%81CTICA_%20PAR%C3%81METROS%20DE%20MEDIDA%20DE%20RF%20EN%20REDES%20CELULARES.%20UTILIZACI%C3%93N%20DEL%20ANALIZADOR%20DE%20ESPECTROS%20Y%20DE%20APPS%20PARA%20SISTEMA%20ANDROID_IOS/</loc>
+         <lastmod>2026-10-01</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/4-%20TUTORIALES/PR%C3%81CTICAS/AYUDA%20PR%C3%81TICAS/</loc>
+         <lastmod>2026-10-01</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/4-%20TUTORIALES/RETOS/RETO1_%20Configuraci%C3%B3n%20de%20red%205G_EiTB/</loc>
+         <lastmod>2026-10-01</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/4-%20TUTORIALES/RETOS/RETO2_%20Streaming_EiTB_UPF%20separado/</loc>
+         <lastmod>2026-10-01</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/4-%20TUTORIALES/RETOS/RETO3_%20Network%20Slicing_EiTB/</loc>
+         <lastmod>2026-10-01</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/4-%20TUTORIALES/RETOS/RETO4_%20Configuraci%C3%B3n%20de%20red%204G/</loc>
+         <lastmod>2026-10-01</lastmod>
     </url>
 </urlset>
