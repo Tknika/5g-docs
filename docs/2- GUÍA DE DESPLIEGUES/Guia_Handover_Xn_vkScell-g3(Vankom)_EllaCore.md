@@ -10,21 +10,21 @@
 
 [2\. Esquema de conexionado y datos a planificar	3](#2.-esquema-de-conexionado-y-datos-a-planificar)
 
-[Datos a recopilar antes de empezar	3](#datos-a-recopilar-antes-de-empezar)
+    - [Datos a recopilar antes de empezar	3](#datos-a-recopilar-antes-de-empezar)
 
 [3\. Procedimiento de configuración	4](#3.-procedimiento-de-configuración)
 
-[3.1 Comprobaciones previas	4](#3.1-comprobaciones-previas)
+    [3.1 Comprobaciones previas	4](#3.1-comprobaciones-previas)
 
-[3.2 Interruptores de medida (CU)	4](#3.2-interruptores-de-medida-\(cu\))
+    [3.2 Interruptores de medida (CU)	4](#3.2-interruptores-de-medida-\(cu\))
 
-[3.3 Eventos de medida intra-frecuencia	4](#3.3-eventos-de-medida-intra-frecuencia)
+    [3.3 Eventos de medida intra-frecuencia	4](#3.3-eventos-de-medida-intra-frecuencia)
 
-[3.4 Vecina intra-frecuencia (base del NG handover)	5](#3.4-vecina-intra-frecuencia-\(base-del-ng-handover\))
+    [3.4 Vecina intra-frecuencia (base del NG handover)	5](#3.4-vecina-intra-frecuencia-\(base-del-ng-handover\))
 
-[3.5 Relación Xn entre gNB (PeerGnb)	5](#3.5-relación-xn-entre-gnb-\(peergnb\))
+    [3.5 Relación Xn entre gNB (PeerGnb)	5](#3.5-relación-xn-entre-gnb-\(peergnb\))
 
-[3.6 Reinicio y verificación	5](#3.6-reinicio-y-verificación)
+    [3.6 Reinicio y verificación	5](#3.6-reinicio-y-verificación)
 
 [4\. Ajustes para audio y vídeo en tiempo real	6](#4.-ajustes-para-audio-y-vídeo-en-tiempo-real)
 
@@ -46,6 +46,7 @@ Según Vankom, el modo de handover por defecto de estos gNB es el **NG handover*
 
 *gNB-A y gNB-B (misma frecuencia) conectados al core EllaCore por N2/N3 y entre sí por Xn. El UE se desplaza entre ambas celdas mientras transmite audio/vídeo.*
 
+<a id="datos-a-recopilar-antes-de-empezar-datos-a-recopilar-antes-de-empezar"></a>
 ## **Datos a recopilar antes de empezar** {#datos-a-recopilar-antes-de-empezar}
 
 | Parámetro | gNB-A | gNB-B | Observación |
@@ -61,6 +62,7 @@ Según Vankom, el modo de handover por defecto de estos gNB es el **NG handover*
 
 # **3\. Procedimiento de configuración** {#3.-procedimiento-de-configuración}
 
+<a id="31-comprobaciones-previas-31-comprobaciones-previas"></a>
 ## **3.1 Comprobaciones previas** {#3.1-comprobaciones-previas}
 
 * Versión de software 3181 o superior (Overview → Base Station Information).
@@ -69,6 +71,7 @@ Según Vankom, el modo de handover por defecto de estos gNB es el **NG handover*
 
 * Ping entre las IP XNAP de ambos gNB y NG Setup correcto con EllaCore.
 
+<a id="32-interruptores-de-medida-cu-32-interruptores-de-medida-cu"></a>
 ## **3.2 Interruptores de medida (CU)** {#3.2-interruptores-de-medida-(cu)}
 
 Configuration Management → Base Station → CU → Power Control Information → Default Measurement Parameter Configuration during UE Initial Access
@@ -83,6 +86,7 @@ Poner a **1**: A1 Measurement Switch (Measurement\_A1), A2 Measurement Switch (M
 
 Estos interruptores viajan al UE en la segunda reconfiguración RRC tras el acceso. **A2 debe estar activado y entregarse en el acceso inicial** (requisito de Vankom). Alternativa validada por Vankom: A1 y A2 en el acceso inicial y A3 en «Measurement Parameter Configuration after A2 Measurement Received», de modo que A3 solo se entrega cuando el UE informa A2. Se recomienda la primera opción (A3 en el acceso inicial) para que la preparación del handover no dependa de una reconfiguración en el borde de celda (criterio propio, no de Vankom). A4 y B1 no son necesarios (son de inter-frecuencia e inter-RAT).
 
+<a id="33-eventos-de-medida-intra-frecuencia-33-eventos-de-medida-intra-frecuencia"></a>
 ## **3.3 Eventos de medida intra-frecuencia** {#3.3-eventos-de-medida-intra-frecuencia}
 
 Neighborhood Management → Neighborhood Configuration → MeasControlList → MeasControl\[name=meas1\]
@@ -131,6 +135,7 @@ Vankom indica que son valores estimados que no tienen en cuenta histéresis ni o
 
 **Importante: Variante SINR.** El evento A3 no usa «Threshold» sino «Offset»: la v1.0 de este manual citaba ThresholdSINR para A3, lo cual era incorrecto. Para basar A3 en SINR habría que poner TriggerQuantity \= SINR y configurar OffsetSINR (rango \-30 a 30\) en lugar de OffsetRSRP. Esa variante **no aparece en la guía de Vankom** (solo documenta RSRP) ni se conoce la unidad de OffsetSINR. Recomendación: validar primero todo con RSRP y pedir a Vankom confirmación por escrito antes de pasar a SINR (Anexo A).
 
+<a id="34-vecina-intra-frecuencia-base-del-ng-handover-34-vecina-intra-frecuencia-base-del-ng-handover"></a>
 ## **3.4 Vecina intra-frecuencia (base del NG handover)** {#3.4-vecina-intra-frecuencia-(base-del-ng-handover)}
 
 Neighborhood Management → Neighborhood Configuration → NeighborList → IntraFreqCell
@@ -157,6 +162,7 @@ Ponemos nuestros valores y confirmamos.
 
 5. Pulsar **Save and Deliver**. Repetir en el otro gNB apuntando de vuelta. Se pueden añadir varios PLMN a la misma vecina con \[+\].
 
+<a id="35-relacion-xn-entre-gnb-peergnb-35-relacion-xn-entre-gnb-peergnb"></a>
 ## **3.5 Relación Xn entre gNB (PeerGnb)** {#3.5-relación-xn-entre-gnb-(peergnb)}
 
 Configuration Management → Base Station → CU → Base-station access control → PeerGnb → Gnb\_nbr\_list
@@ -187,6 +193,7 @@ Pulsar **Save and Issue** y repetir en el otro gNB con los datos del primero. La
 
 ![][image17]
 
+<a id="36-reinicio-y-verificacion-36-reinicio-y-verificacion"></a>
 ## **3.6 Reinicio y verificación** {#3.6-reinicio-y-verificación}
 
 1. Reiniciar ambos gNB (Overview → Restart Device → OK). El manual V1.0.0 lo exige para los cambios de parámetros de base; la guía de Vankom no lo precisa para vecinas y Xn, por lo que se recomienda hacerlo igualmente.
