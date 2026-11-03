@@ -30,19 +30,18 @@ Se procede a su encendido (Pulsar “Power” y después “Spectrum”):
 
 1. Si aún no lo tiene, descargue el software de emulación de terminal PuTTY de  [putty.org](http://putty.org/) .  
 2. Conecte su PlutoSDR en el puerto USB.  
-3. Abra el Administrador de dispositivos de Windows y expanda la entrada Puertos (COM y LPT). Tome nota de qué puerto COM está utilizando la consola serie PlutoSDR. En la captura de pantalla, el nuestro está usando COM7. Cierre el administrador de dispositivos después.
+3. Abra el Administrador de dispositivos de Windows y expanda la entrada Puertos (COM y LPT). Tome nota de qué puerto COM está utilizando la consola serie PlutoSDR. En la captura de pantalla, el nuestro está usando COM7. Cierre el administrador de dispositivos después.  
 
-![][image4]
+    ![][image4]
 
 4. Abra PuTTY y seleccione el botón 'serie'.  
 5. En 'Línea serie', escriba el puerto COM que está utilizando PlutoSDR. En nuestro caso escribimos COM7.  
       
-   ![][image5]  
 6. Presiona Abrir y deberías ser recibido con una pantalla de inicio de sesión.
 
 7. Inicie sesión con las credenciales de usuario: root, contraseña: analog.
 
-![][image6]
+    ![][image6]
 
 **¿Cómo conocer la versión?.** Escribimos por comando:
 
