@@ -1269,19 +1269,24 @@ Driver para windows:<br />
 <ol>
 <li>Si aún no lo tiene, descargue el software de emulación de terminal PuTTY de  <a href="http://putty.org/">putty.org</a> .  </li>
 <li>Conecte su PlutoSDR en el puerto USB.  </li>
-<li>Abra el Administrador de dispositivos de Windows y expanda la entrada Puertos (COM y LPT). Tome nota de qué puerto COM está utilizando la consola serie PlutoSDR. En la captura de pantalla, el nuestro está usando COM7. Cierre el administrador de dispositivos después.</li>
-</ol>
+<li>
+<p>Abra el Administrador de dispositivos de Windows y expanda la entrada Puertos (COM y LPT). Tome nota de qué puerto COM está utilizando la consola serie PlutoSDR. En la captura de pantalla, el nuestro está usando COM7. Cierre el administrador de dispositivos después.  </p>
 <p><img alt="" src="../img/image4.png" /></p>
-<ol>
-<li>Abra PuTTY y seleccione el botón 'serie'.  </li>
-<li>En 'Línea serie', escriba el puerto COM que está utilizando PlutoSDR. En nuestro caso escribimos COM7.  </li>
-</ol>
-<p><img alt="" src="../img/image5.png" /><br />
-6. Presiona Abrir y deberías ser recibido con una pantalla de inicio de sesión.</p>
-<ol>
-<li>Inicie sesión con las credenciales de usuario: root, contraseña: analog.</li>
-</ol>
+</li>
+<li>
+<p>Abra PuTTY y seleccione el botón 'serie'.  </p>
+</li>
+<li>
+<p>En 'Línea serie', escriba el puerto COM que está utilizando PlutoSDR. En nuestro caso escribimos COM7.  </p>
+</li>
+<li>
+<p>Presiona Abrir y deberías ser recibido con una pantalla de inicio de sesión.</p>
+</li>
+<li>
+<p>Inicie sesión con las credenciales de usuario: root, contraseña: analog.</p>
 <p><img alt="" src="../img/image6.png" /></p>
+</li>
+</ol>
 <p><strong>¿Cómo conocer la versión?.</strong> Escribimos por comando:</p>
 <p><strong>#fw_printenv attr_name</strong></p>
 <p>respuesta: attr_name=compatible</p>
