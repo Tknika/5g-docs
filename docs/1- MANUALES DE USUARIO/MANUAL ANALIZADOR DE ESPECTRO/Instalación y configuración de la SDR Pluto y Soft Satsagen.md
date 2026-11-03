@@ -18,13 +18,13 @@ Se procede a la descarga del software de la página:
 
 Y a continuación se ejecuta el instalador:
 
-**![][image1]**
+![][image1]
 
 Se procede a su encendido (Pulsar “Power” y después “Spectrum”):
 
-**![][image2]**
+![][image2]
 
-**![][image3]**
+![][image3]
 
 **Ampliación de frecuencias hasta 6GHz:**
 
@@ -41,7 +41,7 @@ Se procede a su encendido (Pulsar “Power” y después “Spectrum”):
 
 7. Inicie sesión con las credenciales de usuario: root, contraseña: analog.
 
-    ![][image6]
+![][image6]
 
 **¿Cómo conocer la versión?.** Escribimos por comando:
 
