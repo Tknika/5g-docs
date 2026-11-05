@@ -1,86 +1,250 @@
-***INSTALAR open5gs CURSO2025/2026***  
-\*\*Si la máquina la creamos en proxmox confirmar que Processor→Type→host   
-1-Instalamos docker y portainer  
-Accedemos a [https://github.com/Tknika/5g-kutxa-ansible/tree/portainer](https://github.com/Tknika/5g-kutxa-ansible/tree/portainer)  
-Ejecutamos los pasos indicados:  
-	Instalamos ansible: sudo apt update && sudo apt install \-y ansible git  
-	Instalamos docker y portainer:   
-sudo ansible-pull \-U https://github.com/Tknika/5g-kutxa-ansible.git \--checkout portainer \-i localhost,  
-reboot(para meterlo en el grupo)  
-Comprobamos que está correcto: docker ps o https://localhost:9443
+# INSTALAR Open5GS CURSO 2025/2026
 
-2-Instalamos open5gs  
-Accedemos: [https://github.com/herlesupreeth/docker\_open5gs](https://github.com/herlesupreeth/docker_open5gs)
+> **Importante:** Si la máquina virtual se crea en Proxmox, confirmar que:
+>
+> **Processor → Type → host**
 
-Descargamos su repositorio:  
-Instalar git: sudo apt install git  
-Clonamos repositorio: git clone [https://github.com/herlesupreeth/docker\_open5gs](https://github.com/herlesupreeth/docker_open5gs)
+## Índice
 
-Descargamos las imágenes: (En este caso solamente open5gs, no descargamos IMS…)  
-docker pull ghcr.io/herlesupreeth/docker\_open5gs:master  
-docker tag ghcr.io/herlesupreeth/docker\_open5gs:master docker\_open5gs
+- [1. Instalación de Docker y Portainer](#1-instalacion-de-docker-y-portainer)
+- [2. Instalación de Open5GS](#2-instalacion-de-open5gs)
+- [3. Roaming Open5GS](#3-roaming-open5gs)
+- [4. Separar UPF Open5GS](#4-separar-upf-open5gs)
 
-docker pull ghcr.io/herlesupreeth/docker\_grafana:master  
-docker tag ghcr.io/herlesupreeth/docker\_grafana:master docker\_grafana
+# 1. Instalación de Docker y Portainer
 
-docker pull ghcr.io/herlesupreeth/docker\_metrics:master  
-docker tag ghcr.io/herlesupreeth/docker\_metrics:master docker\_metrics
+Accedemos al repositorio:
 
-Levantamos el docker compose que necesitemos:  
-1- Accedemos al .env para realizar los cambios necesarios:   
-MNC, MCC, TAC  
-DOCKER\_HOST\_IP: La IP del PC donde estamos realizando la instalación  
-Para aplicar los cambios: Guardar y ejecutar:   
-set \-a   
-source .env   
-2-Para levantar un 5G completo levantaremos el fichero sa-deploy.yaml:  
-	docker compose \-f sa-deploy.yaml up \-d  
-Comprobamos que está correcto: Acceder a portainer y visualizar todos los contenedores levantados.
+<https://github.com/Tknika/5g-kutxa-ansible/tree/portainer>
 
-***ROAMING open5gs CURSO2025/2026***
+Ejecutamos los pasos indicados.
 
-Para poder trabajar con varias radios en la misma aula:  
-Trabajamos con el core y la radio en un PLMN(Ej. 00110\) pero nos conectamos con un movil en la 00101
+### Instalar Ansible
 
-1-Conectamos core y radio (PLMN:00110)  
-2-Agregamos en webui el usuario: 00101 …  
-3-Configuramos el nrf.yaml:  
-![][image1]
+```bash
+sudo apt update && sudo apt install -y ansible git
+```
 
-***SEPARAR UPF open5gs CURSO2025/2026***
+### Instalar Docker y Portainer
 
-PC dónde teníamos el UPF instalado:  
-1-Copiamos el fichero sa-deploy.yaml y le llamamos core-sinUPF.yaml  
-En el fichero core-sinUPF.yaml: 
+```bash
+sudo ansible-pull -U https://github.com/Tknika/5g-kutxa-ansible.git --checkout portainer -i localhost,
+```
 
-- Comentamos o borramos toda la parte de upf:  
-- Agregamos “ports” “"8805:8805/udp” en el SMF
+Reiniciar el equipo para aplicar correctamente la pertenencia al grupo Docker:
 
-EN el fichero .env: 
+```bash
+reboot
+```
 
-- DOCKER\_HOST\_IP=IP del core  
-- UPF\_IP=IP del UPF  
-- UPF\_ADVERTISE\_IP=IP del UPF				
+### Verificación
 
-Levantamos el docker compose que necesitemos:  
-	docker compose \-f core-sinUPF.yaml up \-d
+Comprobar que Docker está funcionando:
 
-PC dónde tendremos el UPF instalado:  
-1-Copiamos el fichero sa-deploy.yaml y le llamamos UPF2.yaml  
-En el fichero UPF2.yaml: 
+```bash
+docker ps
+```
 
-- Comentamos o borramos todo menos la parte de upf:   
-- En network lo ponemos modo host  
-- Borramos la parte de  sysctls:
+O acceder a:
 
-En el fichero .env: 
+```text
+https://localhost:9443
+```
 
-- DOCKER\_HOST\_IP=IP del UPF  
-- UPF\_IP=IP del UPF  
-- UPF\_ADVERTISE\_IP=IP del UPF  
-- SMF\_IP=IP del core
+# 2. Instalación de Open5GS
 
-Levantamos el docker compose que necesitemos:  
-	docker compose \-f UPF2.yaml up \-d
+Accedemos al repositorio oficial:
 
-[image1]: img/open5gs_image1.png
+<https://github.com/herlesupreeth/docker_open5gs>
+
+### Descargar repositorio
+
+Instalar Git:
+
+```bash
+sudo apt install git
+```
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/herlesupreeth/docker_open5gs
+```
+
+### Descargar imágenes Docker
+
+En este caso solamente descargamos Open5GS y componentes asociados, sin IMS.
+
+#### Open5GS
+
+```bash
+docker pull ghcr.io/herlesupreeth/docker_open5gs:master
+docker tag ghcr.io/herlesupreeth/docker_open5gs:master docker_open5gs
+```
+
+#### Grafana
+
+```bash
+docker pull ghcr.io/herlesupreeth/docker_grafana:master
+docker tag ghcr.io/herlesupreeth/docker_grafana:master docker_grafana
+```
+
+#### Metrics
+
+```bash
+docker pull ghcr.io/herlesupreeth/docker_metrics:master
+docker tag ghcr.io/herlesupreeth/docker_metrics:master docker_metrics
+```
+
+### Configuración previa
+
+Editar el fichero `.env` y configurar:
+
+- MCC
+- MNC
+- TAC
+- DOCKER_HOST_IP (IP del equipo donde se realiza la instalación)
+
+Aplicar los cambios:
+
+```bash
+set -a
+source .env
+```
+
+### Desplegar Core 5G Stand Alone
+
+Levantar el despliegue completo:
+
+```bash
+docker compose -f sa-deploy.yaml up -d
+```
+
+### Verificación
+
+Comprobar desde Portainer que todos los contenedores se han levantado correctamente.
+
+# 3. Roaming Open5GS
+
+Para poder trabajar con varias radios dentro de la misma aula:
+
+- El Core y la radio trabajarán en un PLMN (por ejemplo `00110`).
+- El terminal móvil se conectará utilizando otro PLMN (por ejemplo `00101`).
+
+### Pasos
+
+#### 1. Conectar Core y radio
+
+Configurar tanto el Core como la radio con:
+
+```text
+PLMN = 00110
+```
+
+#### 2. Crear abonado
+
+Agregar en la WebUI un usuario utilizando:
+
+```text
+PLMN = 00101
+```
+
+#### 3. Configurar NRF
+
+Editar el fichero:
+
+```text
+nrf.yaml
+```
+
+y realizar la configuración correspondiente.
+
+![Configuración NRF](img/open5gs_image1.png)
+
+# 4. Separar UPF Open5GS
+
+## Equipo donde actualmente está instalado el UPF
+
+### Paso 1. Crear nuevo compose
+
+Copiar:
+
+```text
+sa-deploy.yaml
+```
+
+como:
+
+```text
+core-sinUPF.yaml
+```
+
+### Paso 2. Modificar core-sinUPF.yaml
+
+- Comentar o eliminar toda la sección correspondiente al UPF.
+- Añadir en el servicio SMF:
+
+```yaml
+ports:
+  - "8805:8805/udp"
+```
+
+### Paso 3. Modificar .env
+
+```text
+DOCKER_HOST_IP=IP_DEL_CORE
+UPF_IP=IP_DEL_UPF
+UPF_ADVERTISE_IP=IP_DEL_UPF
+```
+
+### Paso 4. Levantar servicios
+
+```bash
+docker compose -f core-sinUPF.yaml up -d
+```
+
+## Equipo donde se instalará el nuevo UPF
+
+### Paso 1. Crear nuevo compose
+
+Copiar:
+
+```text
+sa-deploy.yaml
+```
+
+como:
+
+```text
+UPF2.yaml
+```
+
+### Paso 2. Modificar UPF2.yaml
+
+- Comentar o eliminar todos los servicios excepto el UPF.
+- Configurar la red en modo host.
+- Eliminar la sección `sysctls`.
+
+### Paso 3. Modificar .env
+
+```text
+DOCKER_HOST_IP=IP_DEL_UPF
+UPF_IP=IP_DEL_UPF
+UPF_ADVERTISE_IP=IP_DEL_UPF
+SMF_IP=IP_DEL_CORE
+```
+
+### Paso 4. Levantar servicios
+
+```bash
+docker compose -f UPF2.yaml up -d
+```
+
+## Verificación final
+
+Comprobar desde Portainer que:
+
+- El Core está operativo.
+- El SMF escucha en UDP 8805.
+- El UPF se registra correctamente contra el SMF.
+- Todos los contenedores aparecen en estado `running`.
