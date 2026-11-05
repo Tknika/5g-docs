@@ -1,68 +1,71 @@
-**MANUAL**
+# MANUAL
 
-**[1\. Configuración inicial:	2](#configuración-inicial:)**
+## Índice
 
-[**2\. Información básica:	2**](#información-básica:)
+- [1. Configuración inicial](#1-configuración-inicial)
+- [2. Información básica](#2-información-básica)
+- [3. Configuración](#3-configuración)
+  - [3.1 Configuración radio](#31-configuración-radio)
+  - [3.2 Configuración conexión a core](#32-configuración-conexión-a-core)
 
-[**3\. Configuración:	3**](#configuración:)
+# 1. Configuración inicial
 
-[3.1 Configuración radio	3](#3.1-configuración-radio)
+Para acceder a la radio desde la LAN:
 
-[3.2 Configuración conexión a core	3](#3.2-configuración-conexión-a-core)
+- Accedemos desde `192.168.150.7`.
+- Configuramos la WAN → DHCP y recibimos una IP del router: `192.168.168.225`.
+- También podemos acceder desde nuestra red mediante esta dirección IP.
 
-1. # **Configuración inicial:** {#configuración-inicial:}
+![Configuración WAN](img/manual_image1.png)
 
-Para acceder a la radio desde la LAN: accedemos desde 192.168.150.7  
-Configuramos la WAN \-\> DHCP y recibimos una IP del router: 192.168.168.225  
-(podemos acceder desde nuestra red por esta IP también)  
-**![][image1]**
+# 2. Información básica
 
-2. # **Información básica:** {#información-básica:}
+Acceso rápido para consultar el estado del gNB y los UE conectados.
 
-Acceso rápido para el estado del gNB y de los UE conectados.
+![Información básica](img/manual_image2.png)
 
-**![][image2]**
+# 3. Configuración
 
-3. # **Configuración:** {#configuración:}
+## 3.1 Configuración radio
 
-## ***3.1 Configuración radio*** {#3.1-configuración-radio}
+Para configurar la radio accedemos a **Quick Setting**.
 
-Para configurar la radio accedemos a “Quick Setting”  
-![][image3]
+![Quick Setting](img/manual_image3.png)
 
-Configurar parámetros radio y del gNB
+Configurar los parámetros de radio y del gNB:
 
-* Banda de trabajo  
-* Ancho de banda  
-* Frecuencia (ARFCN)  
-* PCI: Physical Cell ID
+- Banda de trabajo.
+- Ancho de banda.
+- Frecuencia (ARFCN).
+- PCI (Physical Cell ID).
 
-## ***3.2 Configuración conexión a core*** {#3.2-configuración-conexión-a-core}
+## 3.2 Configuración conexión a core
 
-Para configurar la conexión con el core:   
-NR Setting → Advanced → CU   
-![][image4]
+Para configurar la conexión con el core:
 
-1- Egtpu Local IP: Agregamos la IP de la radio  
-2- Le damos al “+” y conbfiguramos:![][image5]  
-AMF IP: IP del core  
-NGAP Local IP: IP de la radio  
-PLMN: Elegimos la misma que tenemos en el core.   
-\*Si no aparece tendremos que ir a pestaña PLMN  
-Open→ Add  
-Aquí también podemos configurar los slices  
-![][image6]
+**NR Setting → Advanced → CU**
 
-*Podemos comprobar la conexión en la pestaña “Basic info”*
+![Configuración CU](img/manual_image4.png)
 
-[image1]: img/manual_image1.png
+### Parámetros
 
-[image2]: img/manual_image2.png
+1. **Egtpu Local IP**
+   - Agregamos la IP de la radio.
 
-[image3]: img/manual_image3.png
+2. Pulsamos el botón **"+"** y configuramos:
 
-[image4]: img/manual_image4.png
+![Configuración AMF](img/manual_image5.png)
 
-[image5]: img/manual_image5.png
+- **AMF IP**: IP del core.
+- **NGAP Local IP**: IP de la radio.
+- **PLMN**: elegir el mismo configurado en el core.
 
-[image6]: img/manual_image6.png
+> Si el PLMN no aparece:
+>
+> **PLMN → Open → Add**
+
+Desde esta misma pantalla también es posible configurar los *slices*.
+
+![Configuración slices](img/manual_image6.png)
+
+> La conexión puede verificarse en la pestaña **Basic Info**.
